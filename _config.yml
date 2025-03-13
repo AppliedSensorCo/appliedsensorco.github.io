@@ -1,6 +1,6 @@
 title: Applied Sensor Co. Instructions
 description: Documentation for the Applied Sensor Co. products
-theme: just-the-docs/just-the-docs
+theme: just-the-docs
 
 defaults:
   - scope:
