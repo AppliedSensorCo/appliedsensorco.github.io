@@ -41,6 +41,6 @@ nav_order: 9
 Unplug the USB-C cable and clip the protective cover back onto the circuit board. Make sure the USB-C connection hole in the protective cover is aligned with the cutout in the waterproofing plastic sheet before squeezing the protective to snap it back into place. Plug the USB-C cable back in and continue to the next steps.
 
 ## Next Steps
-Let's move on to setting up the YAML code on the mat [Yaml Code Installation](https://ascmats.github.io/yamlcode.html).
+Let's move on to setting up the YAML code on the mat [Yaml Code Installation](https://appliedsensorco.github.io/yamlcode.html).
 
 Please join the [ASC Discord server](https://discord.gg/cB9P6NmYJg) if you have questions or comments about this page.

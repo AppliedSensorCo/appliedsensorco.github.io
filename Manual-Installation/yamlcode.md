@@ -44,7 +44,7 @@ nav_order: 2
 
 <img src="../../images/ESPHome_mat_yaml_plug_computer.png" width="600"> 
 
-- The following steps are a repeat of the previous section, I will just put the images here as a reminder. If you need the full guide, go back to the [Loading ESPHome on the TrampleTek mat](https://ascmats.github.io/docs/Manual-Installation/mat_install.html) on the side navigation bar.
+- The following steps are a repeat of the previous section, I will just put the images here as a reminder. If you need the full guide, go back to the [Loading ESPHome on the TrampleTek mat](https://appliedsensorco.github.io/Manual-Installation/mat_install.html) on the side navigation bar.
 
 <img src="../../images/download_project_wating.png" width="600"> 
 
@@ -66,7 +66,7 @@ nav_order: 2
 
 <img src="../../images/ESPHome_web_connect_bin_install.png" width="600">
 
-If this step fails go to [Boot Mode Instructions](https://ascmats.github.io/bootmode.html).
+If this step fails go to [Boot Mode Instructions](https://appliedsensorco.github.io/bootmode.html).
 
 <img src="../../images/ESPHome_web_connect_installing.png" width="600"> 
 
@@ -83,6 +83,6 @@ If this step fails go to [Boot Mode Instructions](https://ascmats.github.io/boot
 -	NOTE: If you ever need to save and install any changes to the YAML code, you should be able to use the “Wirelessly” install option moving forward. With the “output_power: 8.5dB” line in your YAML the wireless connection should be stable enough to use this option.)
 
 ## Next Steps
-Let's move on to [configuring the mat into the Home Assistant UI](https://ascmats.github.io/docs/Manual-Installation/HAintegration.html).
+Let's move on to [configuring the mat into the Home Assistant UI](https://appliedsensorco.github.io/Manual-Installation/HAintegration.html).
 
 Please join the [ASC Discord server](https://discord.gg/cB9P6NmYJg) if you have questions or comments about this page.

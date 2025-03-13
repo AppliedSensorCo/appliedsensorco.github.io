@@ -6,9 +6,9 @@ nav_order: 1
 ---
 # (Optional) Taking Control of the TrampleTek mat in ESPHome
 
-## These instructions are optional and only if you want to view device Logs and edit the YAML code directly after doing the [Easy Mode Installation](https://ascmats.github.io/EasyModeInstall.html).
+## These instructions are optional and only if you want to view device Logs and edit the YAML code directly after doing the [Easy Mode Installation](https://appliedsensorco.github.io/EasyModeInstall.html).
 
-## If you "Take Control" of your TrampleTek Blue, you will still get Home Assistant notifications when there is an update. IF YOU UPDATE YOUR FIRMWARE THROUGH HOME ASSISTANT OTA (Over-the-air) after you have "Taken Control" of the device then IT WILL ERASE YOUR INTERNALLY SAVED WI-FI CREDENTIALS. You will need to use Bluetooth, or the device's fallback hotspot, or connect via the [ESPHome web](https://web.esphome.io/), or reload the firmware completely using the [Easy Mode instructions](https://ascmats.github.io/EasyModeInstall.html) to get the device reconnected to your Wi-Fi. Alternatively you can look through the [TrampleTek Blue YAML code](https://github.com/ASCKing9/TrampleTek-Blue-code/blob/main/TrampleTek_WebUSB_ESPHome.yaml) to make the updates yourself instead of using Home Assistant's OTA update.
+## If you "Take Control" of your TrampleTek Blue, you will still get Home Assistant notifications when there is an update. IF YOU UPDATE YOUR FIRMWARE THROUGH HOME ASSISTANT OTA (Over-the-air) after you have "Taken Control" of the device then IT WILL ERASE YOUR INTERNALLY SAVED WI-FI CREDENTIALS. You will need to use Bluetooth, or the device's fallback hotspot, or connect via the [ESPHome web](https://web.esphome.io/), or reload the firmware completely using the [Easy Mode instructions](https://appliedsensorco.github.io/EasyModeInstall.html) to get the device reconnected to your Wi-Fi. Alternatively you can look through the [TrampleTek Blue YAML code](https://github.com/ASCKing9/TrampleTek-Blue-code/blob/main/TrampleTek_WebUSB_ESPHome.yaml) to make the updates yourself instead of using Home Assistant's OTA update.
 
 ## These are the step-by-step instructions to "Take Control" of your TrampleTek Blue device in ESPHome.
 
@@ -65,6 +65,6 @@ nav_order: 1
 <img src="images/ESPHome_mat_yaml_save_upload.png" width="600"> 
 
 ## Next Steps
-**SKIP** the Manual Installation section and move directly to [understanding the UI elements of the TrampleTek Blue (Home Assistant version)](https://ascmats.github.io/usingHAui.html).
+**SKIP** the Manual Installation section and move directly to [understanding the UI elements of the TrampleTek Blue (Home Assistant version)](https://appliedsensorco.github.io/usingHAui.html).
 
 Please join the [ASC Discord server](https://discord.gg/cB9P6NmYJg) if you have questions or comments about this page.

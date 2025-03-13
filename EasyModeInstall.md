@@ -21,9 +21,9 @@ esp-web-install-button button:hover {
 # Loading ESPHome on the TrampleTek Blue mat using [ESP Web tools](https://esphome.github.io/esp-web-tools/)
 
 ## These instructions are for default Home Assistant UI with the ESPHome add-on
-If you are a Home Assistant power-user I suggest jumping to [Loading ESPHome on the TrampleTek mat](https://ascmats.github.io/docs/Manual-Installation/mat_install.html) section and altering the directions and files as you need. If you are not a Home Assistant power-user yet, then these instructions are for you.
+If you are a Home Assistant power-user I suggest jumping to [Loading ESPHome on the TrampleTek mat](https://appliedsensorco.github.io/Manual-Installation/mat_install.html) section and altering the directions and files as you need. If you are not a Home Assistant power-user yet, then these instructions are for you.
 
-## (Warning) Easy Mode installation is dependent on web-based tools that might change. If this mode works, great(!), you can skip the Manual Install section. If this doesn't work jump to the [Manual Installation](https://ascmats.github.io/docs/Manual-Installation/) section.
+## (Warning) Easy Mode installation is dependent on web-based tools that might change. If this mode works, great(!), you can skip the Manual Install section. If this doesn't work jump to the [Manual Installation](https://appliedsensorco.github.io/Manual-Installation/) section.
 
 ## These are the step-by-step instructions
 
@@ -91,14 +91,14 @@ My COM port was COM9 in this example.
 
 <img src="images/USBWeb_14_finish_mat.png" width="400">
 
-- Your mat will have a unpleasant name of "TTBlue xxxxxx", if you want to change it I suggest manually going to each UI element in the Home Assistant Overview page and clicking on the gear icon. Alternatively you can "Take Control" of the device and it will automatically rename all the UI elements, but it's a little more complex. Instructions for that are here: [(Optional) Taking Control of the TrampleTek mat in ESPHome](https://ascmats.github.io/esphometakecontrol.html).
+- Your mat will have a unpleasant name of "TTBlue xxxxxx", if you want to change it I suggest manually going to each UI element in the Home Assistant Overview page and clicking on the gear icon. Alternatively you can "Take Control" of the device and it will automatically rename all the UI elements, but it's a little more complex. Instructions for that are here: [(Optional) Taking Control of the TrampleTek mat in ESPHome](https://appliedsensorco.github.io/esphometakecontrol.html).
 
 <img src="images/USBWeb_21_rename.png" width="400">
 
 ## Next Steps
-If this worked, then you can **SKIP** the Manual Installation section and move directly to [understanding the UI elements of the TrampleTek Blue (Home Assistant version)](https://ascmats.github.io/usingHAui.html).
+If this worked, then you can **SKIP** the Manual Installation section and move directly to [understanding the UI elements of the TrampleTek Blue (Home Assistant version)](https://appliedsensorco.github.io/usingHAui.html).
 
-If you want to take full control of your TrampleTek Blue mat then check out these optional instructions [(Optional) Taking Control of the TrampleTek mat in ESPHome](https://ascmats.github.io/esphometakecontrol.html)
+If you want to take full control of your TrampleTek Blue mat then check out these optional instructions [(Optional) Taking Control of the TrampleTek mat in ESPHome](https://appliedsensorco.github.io/esphometakecontrol.html)
 
 Please join the [ASC Discord server](https://discord.gg/cB9P6NmYJg) if you have questions or comments about this page.
 

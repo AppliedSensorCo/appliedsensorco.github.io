@@ -22,7 +22,7 @@ esp-web-install-button button:hover {
 
 ## These are the step-by-step instructions to install the SlumberTek firmware:
 
-- Open a browser tab with the [Easy Model Installation](https://ascmats.github.io/EasyModeInstall.html) because you'll be using the "SlumberTek Firmware install button" button below and then following the Easy Mode Installation right at the "The below pop-up" step.
+- Open a browser tab with the [Easy Model Installation](https://appliedsensorco.github.io/EasyModeInstall.html) because you'll be using the "SlumberTek Firmware install button" button below and then following the Easy Mode Installation right at the "The below pop-up" step.
 
 - Note that ESP Web tools only work with Google Chrome or Microsoft Edge.
 
@@ -36,7 +36,7 @@ esp-web-install-button button:hover {
         </i>
 </esp-web-install-button>
 
-- Now follow the [Easy Model Installation](https://ascmats.github.io/EasyModeInstall.html) instructions. You'll know you've installed the SlumberTek code because you'll see the name of the firmware in the install menus - **"SlumberTek Firmware"**.
+- Now follow the [Easy Model Installation](https://appliedsensorco.github.io/EasyModeInstall.html) instructions. You'll know you've installed the SlumberTek code because you'll see the name of the firmware in the install menus - **"SlumberTek Firmware"**.
 
 ## UI element explanation (as of Firmware update 0.1.3 - 2/20/25)
 
