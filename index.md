@@ -17,4 +17,4 @@ This documentation will help you through the hardware setup for Home Assistant a
 
 You can also reach out to hello@asc.com for additional questions about ASC.
 
-Link to the github repo for these web page is [here](https://github.com/ascmats/ascmats.github.io).
+Link to the github repo for these web page is [here](https://github.com/AppliedSensorCo/appliedsensorco.github.io).
