@@ -1,9 +1,9 @@
 ---
-title: Welcome to the TrampleTek Blue Docs
+title: Welcome to ASC's Docs
 layout: default
 nav_order: 1
 ---
-# Welcome to the documentation for TrampleTek Blue (Home Assistant version)!
+# Welcome to the documentation for Applied Sensor Co.'s products!
 
 <img src="images/mat_usage_image.png" width="600">
 
