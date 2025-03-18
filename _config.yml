@@ -11,6 +11,8 @@ defaults:
 
 url: https://appliedsensorco.github.io
 
+google_analytics: G-JH5NQ5LFZL
+
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
 
