@@ -21,7 +21,7 @@ nav_order: 2
 
 <img src="../../images/ESPHome_mat_yaml.png" width="600"> 
 
-## Go to the [TrampleTek Blue YAML](https://github.com/ASCKing9/TrampleTek-Blue-code/blob/main/TrampleTek_ESPHome.yaml) and follow the steps to add the necessary front matter to your YAML file.
+## Go to the [TrampleTek Blue YAML](https://github.com/AppliedSensorCo/ASC-product-code/blob/main/TrampleTekBlue/TrampleTek_ESPHome.yaml) and follow the steps to add the necessary front matter to your YAML file.
 
  
 - You need to make sure the mat has your Wi-Fi credentials. You can either put your details directly into this file (you must have double quotations around the SSID and the password) or use the secrets.yaml file (optional steps below).
