@@ -31,7 +31,7 @@ esp-web-install-button button:hover {
 # UPDATE 3/27/25 I AM ACTIVELY WORKING ON THIS PAGE FOR INSTRUCTIONS UPDATES AND FIRMWARE
 ### If you tried SlumberTek ver-0.2.0 and it broke and you want to go back to ver-0.1.4 click this button
 
-<esp-web-install-button manifest="https://github.com/AppliedSensorCo/ASC-product-code/raw/refs/heads/main/SlumberTek/TrampleTek_Sleep.json" install-supported="">
+<esp-web-install-button manifest="https://raw.githubusercontent.com/AppliedSensorCo/ASC-product-code/refs/heads/main/SlumberTek/TrampleTek_Sleep.json" install-supported="">
         <button slot="activate">SlumberTek Firmware 0.1.4 install button</button>
         <i slot="unsupported">
           The option is not available because your browser does not support Web
