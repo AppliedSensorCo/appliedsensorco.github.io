@@ -28,22 +28,11 @@ esp-web-install-button button:hover {
 
 - Click the button labeled "SlumberTek Firmware install button" right below this line to start the ESP Web tool:
 
-# **(UPDATE 3/27/25)** I AM ACTIVELY WORKING ON THIS PAGE FOR INSTRUCTIONS UPDATES AND FIRMWARE
-### If you tried SlumberTek ver-0.2.0 and it broke and you want to go back to ver-0.1.4 click this button
-
-<esp-web-install-button manifest="https://raw.githubusercontent.com/AppliedSensorCo/ASC-product-code/refs/heads/main/SlumberTek/TrampleTek_Sleep.json" install-supported="">
-        <button slot="activate">SlumberTek Firmware 0.1.4 install button</button>
-        <i slot="unsupported">
-          The option is not available because your browser does not support Web
-          Serial. Open this page in Google Chrome or Microsoft Edge instead<span class="not-supported-i hidden">
-            (but not on your iOS device)</span>.
-        </i>
-</esp-web-install-button>
-
-### If you are new or are actively helping me to improve ver-0.2.0 click this button
+# **(UPDATE 4/2/25)** I AM ACTIVELY WORKING ON THIS PAGE FOR INSTRUCTIONS UPDATES AND FIRMWARE
+### Firmware Ver 0.2.1 is stable, click the button below to install it:
 
 <esp-web-install-button manifest="https://raw.githubusercontent.com/ASCKing9/TrampleTek-Blue-code/refs/heads/main/TrampleTek_Debug/SleepMatBeta/TrampleTek_Sleep.json" install-supported="">
-        <button slot="activate">SlumberTek Firmware 0.2.0 install button</button>
+        <button slot="activate">SlumberTek Firmware 0.2.1 install button</button>
         <i slot="unsupported">
           The option is not available because your browser does not support Web
           Serial. Open this page in Google Chrome or Microsoft Edge instead<span class="not-supported-i hidden">
