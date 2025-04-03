@@ -6,9 +6,9 @@ nav_order: 1
 ---
 # (Optional) Taking Control of the TrampleTek mat in ESPHome
 
-## These instructions are optional and only if you want to view device Logs and edit the YAML code directly after doing the [Easy Mode Installation](https://appliedsensorco.github.io/EasyModeInstall.html).
+## These instructions are optional and only if you want to view device logs and edit the YAML code directly after doing the [Easy Mode Installation](https://appliedsensorco.github.io/EasyModeInstall.html).
 
-## If you "Take Control" of your TrampleTek Blue, you will still get Home Assistant notifications when there is an update. IF YOU UPDATE YOUR FIRMWARE THROUGH HOME ASSISTANT OTA (Over-the-air) after you have "Taken Control" of the device then IT WILL ERASE YOUR INTERNALLY SAVED WI-FI CREDENTIALS. You will need to use Bluetooth, or the device's fallback hotspot, or connect via the [ESPHome web](https://web.esphome.io/), or reload the firmware completely using the [Easy Mode instructions](https://appliedsensorco.github.io/EasyModeInstall.html) to get the device reconnected to your Wi-Fi. Alternatively you can look through the [TrampleTek Blue YAML code](https://github.com/ASCKing9/TrampleTek-Blue-code/blob/main/TrampleTek_WebUSB_ESPHome.yaml) to make the updates yourself instead of using Home Assistant's OTA update.
+## If you "Take Control" of your TrampleTek Blue or SlumberTek, you will still get Home Assistant notifications when there is an update. Note: If you update your firmware through Home Assistant OTA after taking control, it may erase your saved Wi-Fi credentials. You will need to use Bluetooth, or the device's fallback hotspot, or connect via the [ESPHome web](https://web.esphome.io/), or reload the firmware completely using the [Easy Mode instructions](https://appliedsensorco.github.io/EasyModeInstall.html) to get the device reconnected to your Wi-Fi.
 
 ## These are the step-by-step instructions to "Take Control" of your TrampleTek Blue device in ESPHome.
 
@@ -36,11 +36,11 @@ nav_order: 1
 
 <img src="images/USBWeb_17_name_device.png" width="400"> 
 
-- Now install with your new name! Click "Install".
+- Click "Install" to flash the device with your new name.
 
 <img src="images/USBWeb_18_install.png" width="400"> 
 
-- This part is going to take awhile, like 3-4+ minutes. It's going to build the code and then install it over Wi-Fi. Make sure your mat is in a good place for signal from your router. The underlined bar shows the progress of installing over the Wi-Fi. Sometimes this step fails, go to the bottom of this page for help.
+- This part is going to take a while, like 3-5+ minutes. It's going to build the code and then install it over Wi-Fi. Make sure your mat is in a good place for signal from your router. The progress bar will show installation status. Sometimes this step fails, go to the next section of this page for help.
 
 <img src="images/USBWeb_19_install_logs.png" width="600">
   
@@ -48,7 +48,7 @@ nav_order: 1
 
 <img src="images/USBWeb_20_close_logs.png" width="600"> 
 
-### I have seen an Wi-Fi install error that says something like "Error resolving IP address: Error resolving address with mDNS:" when trying to "Take Control". Sometimes you just need to press "Retry" in the bottom right of LOGS screen (the screenshot above will have a "Retry" button if the upload fails). If that doesn't work, make sure your ESPHome SECRETS has your Wi-Fi information.
+### I have seen a Wi-Fi install error that says something like "Error resolving IP address: Error resolving address with mDNS:" when trying to "Take Control". Sometimes you just need to press "Retry" in the bottom right of LOGS screen (the screenshot above will have a "Retry" button if the upload fails). If that doesn't work, make sure your ESPHome SECRETS has your Wi-Fi information.
 
 - Get to the ESPHome UI view and click on “Secrets” in the top right corner. 
 
