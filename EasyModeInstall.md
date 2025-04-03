@@ -18,10 +18,10 @@ esp-web-install-button button:hover {
 }
 </style>
 
-# Loading ESPHome on the TrampleTek Blue mat using [ESP Web tools](https://esphome.github.io/esp-web-tools/)
+# Loading ESPHome onto your TrampleTek Blue or SlumberTek using [ESP Web tools](https://esphome.github.io/esp-web-tools/)
 
 ## These instructions are for default Home Assistant UI with the ESPHome add-on
-If you are a Home Assistant power-user I suggest jumping to [Loading ESPHome on the TrampleTek mat](https://appliedsensorco.github.io/Manual-Installation/mat_install.html) section and altering the directions and files as you need. If you are not a Home Assistant power-user yet, then these instructions are for you.
+If you are a Home Assistant power-user I suggest jumping to [Manual Installation](https://appliedsensorco.github.io/Manual-Installation/mat_install.html) section and altering the directions and files as you need. If you are not a Home Assistant power-user yet, then these instructions are for you.
 
 ## (Warning) Easy Mode installation is dependent on web-based tools that might change. If this mode works, great(!), you can skip the Manual Install section. If this doesn't work jump to the [Manual Installation](https://appliedsensorco.github.io/Manual-Installation/) section.
 
@@ -29,7 +29,7 @@ If you are a Home Assistant power-user I suggest jumping to [Loading ESPHome on 
 
 - ESP Web tools only work with Google Chrome or Microsoft Edge. Open another window of your browser, as it can be hard to read the instructions and use the ESP Web tool (it covers the webpage).
 
-- Click the button labeled "TrampleTek Blue Firmware install button" right below this line to start the ESP Web tool:
+- Click the button either the "TrampleTek Blue Firmware install" or "SlumberTek Firmware install" button right below this line to start the ESP Web tool:
   
 <esp-web-install-button manifest="https://raw.githubusercontent.com/ASCKing9/TrampleTek-Blue-code/main/TrampleTekBlue.json" install-supported="">
         <button slot="activate">TrampleTek Blue Firmware install button</button>
@@ -40,18 +40,29 @@ If you are a Home Assistant power-user I suggest jumping to [Loading ESPHome on 
         </i>
 </esp-web-install-button>
 
-- The below pop-up will appear asking to select the COM port for your mat. You can plug and un-plug your mat's USB cable into the computer you're using to see which COM port appears and disappears, pick that option and press "connect." (If you don't see anything showing up when you plug your USB cable into the computer you may have a USB driver issue, if you hit cancel a pop-up will give you some info on hope to install the right USB drivers).
+
+<esp-web-install-button manifest="https://raw.githubusercontent.com/ASCKing9/TrampleTek-Blue-code/refs/heads/main/TrampleTek_Debug/SleepMatBeta/TrampleTek_Sleep.json" install-supported="">
+        <button slot="activate">SlumberTek Firmware install button</button>
+        <i slot="unsupported">
+          The option is not available because your browser does not support Web
+          Serial. Open this page in Google Chrome or Microsoft Edge instead<span class="not-supported-i hidden">
+            (but not on your iOS device)</span>.
+        </i>
+</esp-web-install-button>
+
+
+- The below pop-up will appear asking to select the COM port for your device. You can plug and un-plug your mat's USB cable into the computer you're using to see which COM port appears and disappears, pick that option and press "connect." (If you don't see anything showing up when you plug your USB cable into the computer you may have a USB driver issue, if you hit cancel a pop-up will give you some info on how to install the right USB drivers).
 
 <img src="images/USBWeb_1_USBdialogConnect.png" width="400"> 
 
 My COM port was COM9 in this example.
 
-- If the ESP Web tools succesfully connect to the device you will see this pop-up, click "Install TrampleTek Blue Firmware"
+- If the ESP Web tools successfully connect to the device you will see this pop-up, click either "Install TrampleTek Blue Firmware" or "Install SlumberTek Firmware".
 
 <img src="images/USBWeb_2_InstallFirmware.png" width="400"> 
 
-- You will get another pop-up to confirm, click "Install" (firmware version will be different than this image).
-### WARNING! I'VE BEEN GETTING REPORTS OF BROSWER CRASHES AFTER THE INSTALL STEP COMPLETES (3/10/25). If that happens, open this page back up and press the "Connect" button at the top of this page again, select your COM port, then click on "Connect to Wi-Fi" to continue through the instructions. The firmware is installed, something is just going wrong with the ESP web tool and it's crashing the broswer.
+- You will get another pop-up to confirm, click "Install" (firmware version will be different from this image).
+### WARNING! I'VE BEEN GETTING REPORTS OF BROWSER CRASHES AFTER THE INSTALL STEP COMPLETES (3/10/25). If that happens, open this page back up and press the "Connect" button at the top of this page again, select your COM port, then click on "Connect to Wi-Fi" to continue through the instructions. The firmware is installed, something is just going wrong with the ESP web tool and it's crashing the browser.
 
 <img src="images/USBWeb_3_InstallFirmwareConfirm.png" width="400"> 
 
@@ -63,7 +74,7 @@ My COM port was COM9 in this example.
 
 <img src="images/USBWeb_5_InstallDone.png" width="400"> 
 
-- Next it should ask for you Wi-Fi credentials, if you make a mistake it'll let you know.
+- Next it should ask for your Wi-Fi credentials, if you make a mistake it'll let you know.
 
 <img src="images/USBWeb_6_ConfigWifi.png" width="400">
 
@@ -75,11 +86,11 @@ My COM port was COM9 in this example.
 
 <img src="images/USBWeb_10_open_HA.png" width="400">
 
-- This will jump you directly to your Settings --> Devices & Services page in Home Assisant. Click "Ok" to setup the device in ESPHome.
+- This will jump you directly to your Settings --> Devices & Services page in Home Assistant. Click "Ok" to setup the device in ESPHome.
 
 <img src="images/USBWeb_11_ESPHome_HA.png" width="600">
 
-- Select the new TTBlue device.
+- Select the new TTBlue or SlumberTek device.
 
 <img src="images/USBWeb_12_select_mat.png" width="400">
 
@@ -87,11 +98,11 @@ My COM port was COM9 in this example.
 
 <img src="images/USBWeb_13_submit_mat.png" width="400">
 
-- Next pick where in Home Assistant you want to assign the device, click "Finish", and you're done installing your TrampleTek Blue mat!
+- Next pick where in Home Assistant you want to assign the device, click "Finish", and you're done installing your device!
 
 <img src="images/USBWeb_14_finish_mat.png" width="400">
 
-- Your mat will have a unpleasant name of "TTBlue xxxxxx", if you want to change it I suggest manually going to each UI element in the Home Assistant Overview page and clicking on the gear icon. Alternatively you can "Take Control" of the device and it will automatically rename all the UI elements, but it's a little more complex. Instructions for that are here: [(Optional) Taking Control of the TrampleTek mat in ESPHome](https://appliedsensorco.github.io/esphometakecontrol.html).
+- Your device will have a name of "TTBlue xxxxxx" or "SlumberTek xxxxxx", if you want to change it I suggest manually going to each UI element in the Home Assistant dashboard and clicking on the gear icon to rename. Alternatively you can "Take Control" of the device and it will automatically rename all the UI elements, but it's a little more complex. Instructions for that are here: [(Optional) Taking Control of the TrampleTek mat in ESPHome](https://appliedsensorco.github.io/esphometakecontrol.html).
 
 <img src="images/USBWeb_21_rename.png" width="400">
 
