@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Boot Mode Instructions
-nav_order: 9
+nav_order: 10
 ---
 
 # Instructions for putting the mat into Boot Mode

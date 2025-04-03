@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Hacking the Bluetooth Socket
-nav_order: 11
+nav_order: 12
 ---
 
 # Instructions for Hacking the (Optional) Bluetooth Socket

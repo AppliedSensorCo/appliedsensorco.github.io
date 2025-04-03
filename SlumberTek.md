@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SlumberTek Firmware 
-nav_order: 12
+nav_order: 9
 ---
 <style>
 esp-web-install-button button {

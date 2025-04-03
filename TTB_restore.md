@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Return TrampleTek Blue to Smart Socket version
-nav_order: 10
+nav_order: 11
 ---
 
 # Instructions for reverting the TrampleTek Blue mat back to being Smart Socket only
