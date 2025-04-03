@@ -1,10 +1,10 @@
 ---
 layout: default
-title: (Optional) Taking Control of the TrampleTek mat in ESPHome
+title: (Optional) Taking Control of your device in ESPHome
 parent: Easy Mode Installation
 nav_order: 1
 ---
-# (Optional) Taking Control of the TrampleTek mat in ESPHome
+# (Optional) Taking Control of your deivce in ESPHome
 
 ## These instructions are optional and only if you want to view device logs and edit the YAML code directly after doing the [Easy Mode Installation](https://appliedsensorco.github.io/EasyModeInstall.html).
 
@@ -24,7 +24,7 @@ nav_order: 1
 
 <img src="images/select_open_web_UI.png" width="600">
 
-- Your mat will be discovered, but hidden. Click on the "Show" in the top right corner.
+- Your device will be discovered, but hidden. Click on the "Show" in the top right corner.
 
 <img src="images/USBWeb_15_show_devices.png" width="600"> 
 
@@ -32,7 +32,7 @@ nav_order: 1
 
 <img src="images/USBWeb_16_take_control.png" width="600"> 
 
-- Give your mat a useful name. I find short but descriptive is best, I picked "Raymond's Mat". Click "Take Control".
+- Give your device a useful name. I find short but descriptive is best, I picked "Raymond's Mat". Click "Take Control".
 
 <img src="images/USBWeb_17_name_device.png" width="400"> 
 
@@ -40,7 +40,7 @@ nav_order: 1
 
 <img src="images/USBWeb_18_install.png" width="400"> 
 
-- This part is going to take a while, like 3-5+ minutes. It's going to build the code and then install it over Wi-Fi. Make sure your mat is in a good place for signal from your router. The progress bar will show installation status. Sometimes this step fails, go to the next section of this page for help.
+- This part is going to take a while, like 3-5+ minutes. It's going to build the code and then install it over Wi-Fi. Make sure your device is in a good place for signal from your router. The progress bar will show installation status. Sometimes this step fails, go to the next section of this page for help.
 
 <img src="images/USBWeb_19_install_logs.png" width="600">
   
