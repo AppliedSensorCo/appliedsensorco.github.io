@@ -4,7 +4,7 @@ title: Using TrampleTek in HA
 nav_order: 8
 ---
 
-# Explanation of the User Interface (UI) elements of the TrampleTek Blue (Home Assistant version)
+# Explanation of the User Interface (UI) entities of the TrampleTek Blue
 
 ## User Interface Overview
 
@@ -12,13 +12,13 @@ nav_order: 8
 
 ### The UI has four visible entities **"Calibration"**, **"Dropdown Sensitivity"**, **"Sensitivity"**, and **"Mat Sensor"**.
 
-Your UI elements may show up in a different order, and I will explain them from simpliest to most complex. Note: I will use "pressure" and "weight" interchangeably in this section, they are technically different but for ease of examples I use them interchangeably.
+Your UI entities may show up in a different order, and I will explain them from simplest to most complex. Note: I will use "pressure" and "weight" interchangeably in this section, they are technically different but for ease of examples I use them interchangeably.
 
 ### Mat Sensor monitor
 
 <img src="images/HA_UI_binary.png" width="600">
 
-This component is as simple as it gets, it just shows when the mat has been triggered on or off. This is most likely the entity you will use to trigger your HA automations.
+This entity is as simple as it gets, it just shows when the mat has been triggered on or off. This is most likely the entity you will use to trigger your HA automations.
 
 ### Dropdown Sensitivity
 
@@ -26,7 +26,7 @@ This component is as simple as it gets, it just shows when the mat has been trig
 
 (WARNING: ALL MATS HAVE SLIGHTLY DIFFERENT SENSITIVITY, take all weight values below as rough estimates as they could differ greatly from one mat to another.)
 
-This component sets the sensitivity of the mat from a drop down menu. The five options are long to help explain them in the UI, the options are:
+This dropdown lets you choose the mat’s sensitivity level. The five options are long to help explain them in the UI, the options are:
 
 **1) Low weight object (<1 lb) on an uncovered mat, or a heavy weight object on a heavy weight covered mat (e.g. adult human with mat under mattress). Very sensitive, may cause false triggering**
 
@@ -46,7 +46,7 @@ This component sets the sensitivity of the mat from a drop down menu. The five o
 
 **5) Custom**
 
-- This means you've selected a custom sensitivity from the "Sensitivity" slider (which is the next UI element!).
+- This means you've selected a custom sensitivity from the "Sensitivity" slider.
 
 ### Sensitivity
 
@@ -61,10 +61,10 @@ You can manually change the sensitivity of the mat with this slider. Increase th
 If you're not sure what the Sensitivity should be for your use case use, use the Calibration button!
 
 **<ins>How to use the Calibration button:</ins>**
-- Load your mat with whatever you want the mat's baseline to be (e.g. if you're using it as a bed sensor put it under the matress where you sleep, if you want it sense someone on the coach put it under the coach cushion, etc.).
-- Wait 1-2 minutes for the mat signal to fully settle
+- Load your mat with whatever you want the mat’s starting condition to be (e.g. put it under the couch cushion, put it under another mat etc.).
+- Wait 30 seconds for the mat signal to fully settle
 - Switch the Calibration button to "On"
-- Put whatever the object you want to sense on the mat (e.g. lay down on your bed for the matress sensor, sit on the cushion that you want to sense a person on, etc.)
+- Put whatever the object you want to sense on the mat (e.g. sit on the cushion, stand on your top covering mat, etc.)
 - The Sensitivity slider will automatically update to roughly where you should set the Sensitivity for your use case
 - Switch the Calibration button to "Off"
 
@@ -80,7 +80,7 @@ From simplest to most complex:
 ### Internal Temperature
 The internal temperature of the CPU, there to check how hot the device is getting!
 
-### WiFi Signal Strenth
+### WiFi Signal Strength
 The WiFi signal strength for your device. If it's always larger than -60dB you might want to consider moving it closer to your WiFi router, or getting a WiFi extender.
 
 ### Reset Counter
@@ -91,20 +91,20 @@ You can turn on the voltage output from the sensor by increasing this value abov
 
 ### Pressure voltage
 
-With this UI entity you can watch the voltage of the mat change as weight is put on or taken off the mat. 
+With this UI entity you can watch the voltage of the mat change when something is placed on or taken off the mat. 
 
 <img src="images/HA_UI_VoltagePlot.png" width="600">
 
-This is an example of the voltage plot as I stand on and off the mat with 1 and then 2 feet. This UI element is a fun way to explore the mat and you can even trigger automations directly from voltage changes.
+This is an example of the voltage plot as I stand on and off the mat with one and then two feet. This UI entity is a fun way to explore the mat and you can even use voltage changes to trigger automations.
 
 ## Extra: Technical notes
-- The Sensitivity value is the voltage change required to trigger "on" for the mat. The "off" trigger is a percentage of this value. This is because the mat can recover slowly from heavy or large objects and requiring less of a voltage change when weight comes off helps increase the responsiveness of the mat. You can get rid of this by removing the variable "scaleThreshold" in the YAML code. Look for this line **matUpThreshold = matDataAvg + id(step_event_threshold) * scaleThreshold; // Recovery can be slower, reduces the threshold requirement**
+- The Sensitivity value is the voltage change required to trigger "on" for the mat. The "off" trigger is a lower percentage of the Sensitivity value. This is because the mat can recover slowly from heavy or large objects and requiring less of a voltage change when weight comes off helps increase the responsiveness of the mat. You can get rid of this by removing the variable "scaleThreshold" in the YAML code. Look for this line **matUpThreshold = matDataAvg + id(step_event_threshold) * scaleThreshold; // Recovery can be slower, reduces the threshold requirement**
 
 - The voltage change for the same weight can be different depending on how much weight is already on the mat (e.g. the first 10lbs on the mat might change the voltage by 0.5 V but another 10lbs may only change the mat voltage by an additional 0.1 V). The mats are tuned to be very sensitive to low weights, <20 lbs), but struggle to tell the different between 100 lbs and 1000 lbs. Below is a sweet MS Paint graphic to explain why higher weights sometimes need a *lower* sensitivity value:
   
 <img src="images/SensitivityCurve.png" width="600">
   
-- **<ins>Every mat's voltage range and sensitivity is different</ins>**. Textiles and soft stretchy materials do not always line up the exact same way for each mat build, so there is an expected, and sometimes sizable, varability between mats. If you have multiple mats, do not expect the same Sensivitiy level to work for all your mats for the same use case.
+- **<ins>Every mat's voltage range and sensitivity is different</ins>**. Textiles and soft stretchy materials do not always line up the exact same way for each mat build, so there is an expected, and sometimes sizable, variability between mats. If you have multiple mats, do not expect the same Sensitivity level to work for all your mats for the same use case.
 
 Please join the [ASC Discord server](https://discord.gg/cB9P6NmYJg) if you have questions or comments about this page.
 
