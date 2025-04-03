@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Loading ESPHome on the TrampleTek mat
+title: Loading ESPHome on the Device
 parent: Manual Installation
 nav_order: 1
 ---
 
-# Loading ESPHome on the TrampleTek Blue mat
+# Loading ESPHome on TrampleTek Blue or SlumberTek
 
 ## These instructions are for default Home Assistant UI with the ESPHome add-on
 If you are not using the default Home Assistant with the ESPHome add-on (e.g. you're running Docker on a Linux machine), you will need to alter the instructions for your needs. If you're a tech wizard enough to use Home Assistant in an advanced setup (like Docker/Linux) I believe you'll figure it out. You may need to use the command line instructions for ESPHome [here](https://esphome.io/guides/getting_started_command_line.html) to achieve installation.
@@ -34,21 +34,21 @@ If you are not using the default Home Assistant with the ESPHome add-on (e.g. yo
 
 For now we will use the ESPHome web interface, as there are steps we need to take to make sure the board's Wi-Fi is configured to be stable enough to connect with Home Assistant. This is the [critical fix](https://appliedsensorco.github.io/Manual-Installation/critical_wifi.html) I will mention in multiple places.
 
--	Pick a name for your mat.
+-	Pick a name for your device.
 
 <img src="../../images/pick_a_name.png" width="600">
 
-I find shorter is better for keeping the Home Assistant interface elements less crowded.
+I find shorter is better for keeping the Home Assistant UI elements less crowded.
 
 -	Pick ESP32-C3, that’s the micro-controller brain we’re using.
 
 <img src="../../images/pick_ESP32_c3.png" width="600">
 
--	Your new device will show up in the background, and it will prompt you to pick an encryption key. Go ahead and press “Install” after you keep or change the encryption key.
+-	Your new device will show up in the background, and it will prompt you to pick an encryption key. Go ahead and press “Install”. Afterwards you can keep or change the encryption key.
 
 <img src="../../images/install_device.png" width="600"> 
 
--	Connect your mat to your computer using the USB-C to USB cable that came with the mat and pick “Plug into this computer.”
+-	Connect your device to your computer using the USB-C to USB cable that came with the device and pick “Plug into this computer.”
 
 <img src="../../images/plug_in_this_computer.png" width="600"> 
 
@@ -62,7 +62,7 @@ Side note: I think the simplest option is actually “Plug into the computer run
 
 <img src="../../images/download_project_done.png" width="600"> 
 
--	A new pop up will show up, pick “Modern format.”
+-	A new pop-up will show up, pick “Modern format.”
 
 <img src="../../images/modern_format.png" width="600">  
 
@@ -78,15 +78,15 @@ Side note: I think the simplest option is actually “Plug into the computer run
 
 <img src="../../images/ESPHome_web_connect.png" width="600"> 
 
--	This pop up will show up and you have need to figure out which device is your TrampleTek Mat, and what COM port it is on (mine was COM28 in this example). With the pop up window open you may be able to unplug and re-plug the USB cable in and see which COM port appears and disappears. This usually takes me a couple tries to figure out the COM port and make sure the device is “available” to the computer.
+-	This pop-up will show up and you'll need to figure out which COM port is your device (mine was COM28 in this example). With the pop-up window open you may be able to unplug and re-plug the USB cable in and see which COM port appears and disappears. This usually takes me a couple tries to figure out the COM port and to make sure the device is “available” to the computer.
 
 <img src="../../images/ESPHome_web_connect_usb.png" width="600"> 
 
--	Once you get the right COM port pick this option, to install the [your mat name].bin file you just download.
+-	Once you get the right COM port pick this option, to install the [your device name].bin file you just downloaded.
 
 <img src="../../images/ESPHome_web_connect_install.png" width="600"> 
 
--	This will open a new pop up, click “Choose file” and navigate to wherever you downloaded your [your device name].bin. Select the file and click open (the open button was cut off in the image below, it’s on the right).
+-	This will open a new pop-up, click “Choose file” and navigate to wherever you downloaded your [your device name].bin. Select the file and click open (the open button was cut off in the image below, it’s on the right).
 
 <img src="../../images/ESPHome_web_connect_bin_browse.png" width="600"> 
 
@@ -94,7 +94,7 @@ Side note: I think the simplest option is actually “Plug into the computer run
 
 <img src="../../images/ESPHome_web_connect_bin_install.png" width="600">
 
-WARNING: THIS STEP MIGHT FAIL! That’s okay, it just means the computer can’t (or made a mistake and didn’t) put the mat into Boot Mode. Sometimes you can disconnect and reconnect the mat (you will need to redo the previous step on connecting to the mat with ESPHome web) and then the install button will work. If you continue to get an error about “timing out” you will to manually put the mat into Boot Mode. [Boot Mode Instructions](https://appliedsensorco.github.io/bootmode.html).
+WARNING: THIS STEP MIGHT FAIL! That’s okay, it just means the computer can’t (or made a mistake and didn’t) put the device into Boot Mode. Sometimes you can disconnect and reconnect the device (you will need to redo the previous step on connecting to the device with ESPHome web) and then the install button will work. If you continue to get an error about “timing out” you will need to manually put the device into Boot Mode. [Boot Mode Instructions](https://appliedsensorco.github.io/bootmode.html).
 
 -	If the install starts working, you’ll start seeing loading:
 
@@ -105,6 +105,6 @@ WARNING: THIS STEP MIGHT FAIL! That’s okay, it just means the computer can’t
 <img src="../../images/ESPHome_web_connect_install_success.png" width="600">
 
 ## Next Steps
-Let's move on to setting up the YAML code on the mat [Yaml Code Installation](https://appliedsensorco.github.io/Manual-Installation/yamlcode.html).
+Let's move on to setting up the YAML code on the device [YAML Code Installation](https://appliedsensorco.github.io/Manual-Installation/yamlcode.html).
 
 Please join the [ASC Discord server](https://discord.gg/cB9P6NmYJg) if you have questions or comments about this page.
