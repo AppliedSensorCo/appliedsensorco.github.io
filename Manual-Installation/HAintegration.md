@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Configure into HA
+title: Adding the device into HA
 parent: Manual Installation
 nav_order: 3
 ---
 
-# Instructions for configuring the TrampleTek mat into the Home Assistant UI
+# Instructions for configuring the device into the Home Assistant UI
 
 - Go to the ESPHome integration in Settings -> Devices & Services, click on configure under the new device you just set up:
 
@@ -23,7 +23,7 @@ nav_order: 3
 
 <img src="../../images/HA_UI_overview.png" width="600">
 
-The default UI elements should look something like this.
+- Once the integration is successful the UI should look something like this (UI depends on the device you installed and future UI updates!)
 
 ## Next Steps
 Now let's do a double check that you added the [Wifi critical fix](https://appliedsensorco.github.io/Manual-Installation/critical_wifi.html).
