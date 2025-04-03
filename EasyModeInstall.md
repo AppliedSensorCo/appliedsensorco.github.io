@@ -51,7 +51,7 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
 </esp-web-install-button>
 
 
-- The below pop-up will appear asking to select the COM port for your device. You can plug and un-plug your mat's USB cable into the computer you're using to see which COM port appears and disappears, pick that option and press "connect." (If you don't see anything showing up when you plug your USB cable into the computer you may have a USB driver issue, if you hit cancel a pop-up will give you some info on how to install the right USB drivers).
+- The below pop-up will appear asking to select the COM port for your device. You can plug and un-plug your devices's USB cable into the computer you're using to see which COM port appears and disappears, pick that option and press "connect." (If you don't see anything showing up when you plug your USB cable into the computer you may have a USB driver issue, if you hit cancel a pop-up will give you some info on how to install the right USB drivers).
 
 <img src="images/USBWeb_1_USBdialogConnect.png" width="400"> 
 
@@ -78,7 +78,7 @@ My COM port was COM9 in this example.
 
 <img src="images/USBWeb_6_ConfigWifi.png" width="400">
 
-- Once your Wi-Fi has been accepted there are several ways to integrate the mat into Home Assistant, this is easiest. Click on "Add to Home Assistant".
+- Once your Wi-Fi has been accepted there are several ways to integrate the device into Home Assistant, this is easiest. Click on "Add to Home Assistant".
 
 <img src="images/USBWeb_9_add_HA.png" width="400">
 
@@ -102,14 +102,14 @@ My COM port was COM9 in this example.
 
 <img src="images/USBWeb_14_finish_mat.png" width="400">
 
-- Your device will have a name of "TTBlue xxxxxx" or "SlumberTek xxxxxx", if you want to change it I suggest manually going to each UI element in the Home Assistant dashboard and clicking on the gear icon to rename. Alternatively you can "Take Control" of the device and it will automatically rename all the UI elements, but it's a little more complex. Instructions for that are here: [(Optional) Taking Control of the TrampleTek mat in ESPHome](https://appliedsensorco.github.io/esphometakecontrol.html).
+- Your device will have a name of "TTBlue xxxxxx" or "SlumberTek xxxxxx", if you want to change it I suggest manually going to each UI element in the Home Assistant dashboard and clicking on the gear icon to rename. Alternatively you can "Take Control" of the device and it will automatically rename all the UI elements, but it's a little more complex. Instructions for that are here: [(Optional) Taking Control of your device in ESPHome](https://appliedsensorco.github.io/esphometakecontrol.html).
 
 <img src="images/USBWeb_21_rename.png" width="400">
 
 ## Next Steps
 If this worked, then you can **SKIP** the Manual Installation section and move directly to [understanding the UI elements of the TrampleTek Blue (Home Assistant version)](https://appliedsensorco.github.io/usingHAui.html).
 
-If you want to take full control of your TrampleTek Blue mat then check out these optional instructions [(Optional) Taking Control of the TrampleTek mat in ESPHome](https://appliedsensorco.github.io/esphometakecontrol.html)
+If you want to take full control of your TrampleTek Blue or SlumberTek then check out these optional instructions [(Optional) Taking Control of your device in ESPHome](https://appliedsensorco.github.io/esphometakecontrol.html)
 
 Please join the [ASC Discord server](https://discord.gg/cB9P6NmYJg) if you have questions or comments about this page.
 
