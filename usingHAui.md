@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Using TrampleTek in HA
+title: TrampleTek Blue UI & Controls
 nav_order: 8
 ---
 
