@@ -31,7 +31,7 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
 
 - Click the button either the "TrampleTek Blue Firmware install" or "SlumberTek Firmware install" button right below this line to start the ESP Web tool:
   
-<esp-web-install-button manifest="https://raw.githubusercontent.com/ASCKing9/TrampleTek-Blue-code/main/TrampleTekBlue.json" install-supported="">
+<esp-web-install-button manifest="https://raw.githubusercontent.com/AppliedSensorCo/ASC-product-code/main/TrampleTekBlue/TrampleTekBlue.json" install-supported="">
         <button slot="activate">TrampleTek Blue Firmware install button</button>
         <i slot="unsupported">
           The option is not available because your browser does not support Web
