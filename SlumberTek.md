@@ -29,6 +29,7 @@ Binary occupancy sensor that says when someone is in bed (occupied) or not (clea
 
 <img src="images/Slumbertek_2_UI_021.png" width="400">
 
+# This section is being actively worked on 4/3/25
 ### There are thirteen Diagnostic entities:
 
 ### Detection Sensitivity (lower is more sensitive)
