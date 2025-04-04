@@ -9,7 +9,7 @@ nav_order: 9
 ## User Interface Overview
 
 <img src="images/Slumbertek_1_UI_021.png" width="400">
-(The full names of the entities are not Viewable because SlumberTek XXXXXX is such a long name, hover your mouse over your HA entities to see their full names.) 
+(When using the default Home Assistant Overview the full names of the entities will not be visible may of the entities have longer names. You will need to hover your mouse over your entities to see their full names, or use a custom Home Assistant layout add-on to change the default view.) 
 
 ### The UI has four UI entities **"Calibration"**, **"Transition to Off Delay"**, **"Transition to On Delay"**, and **"Bed Sensor"**.
 
