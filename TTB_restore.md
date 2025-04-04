@@ -8,7 +8,7 @@ nav_order: 11
 
 These steps will revert the mat back to its original programming so it can be used with a TrampleTek Blue socket.
 
-- First, click this [link to directly download](https://github.com/ASCKing9/TrampleTek-Blue-code/raw/refs/heads/main/TrampleTekBlueToothSocket.bin) the TrampleTekBlueToothSocket.bin from the Github [TrampleTek-Blue-code repo](https://github.com/ASCKing9/TrampleTek-Blue-code). It will go to whatever your default download folder is.
+- First, click this [link to directly download](https://github.com/AppliedSensorCo/ASC-product-code/raw/refs/heads/main/TrampleTekBlue/TrampleTekBlueToothSocket.bin) the TrampleTekBlueToothSocket.bin from Github. It will download automatically to your default download folder.
 
 - Next, we will need to download the Espressif Flash Download Tools from [here](https://www.espressif.com/en/support/download/other-tools). Find the Flash Download Tools line and click on the download arrow.
 
@@ -20,7 +20,7 @@ These steps will revert the mat back to its original programming so it can be us
 
 <img src="images/Reflash_2_UnzipESPTool.png" width="600">
 
-- Your window may look different, but in the end extract the files to what ever folder you want.
+- Your window may look different, but in the end extract the files to your desired folder.
 
 <img src="images/Reflash_3_UnzipESPTool.png" width="600">
 
@@ -41,7 +41,7 @@ These steps will revert the mat back to its original programming so it can be us
 
 <img src="images/Reflash_7_dots.png" width="600">  
 
-- This will open a file selector window, navigate to where you downloaded the [TrampleTekBlueToothSocket.bin](https://github.com/ASCKing9/TrampleTek-Blue-code/raw/refs/heads/main/TrampleTekBlueToothSocket.bin) from the first step, and click open.
+- This will open a file selector window, navigate to where you downloaded the TrampleTekBlueToothSocket.bin from the beginning of this guide, and click 'Open'.
 
 <img src="images/Reflash_8_dataIn1.png" width="600">  
 
@@ -49,8 +49,8 @@ These steps will revert the mat back to its original programming so it can be us
 
 <img src="images/Reflash_8_dataIn2.png" width="600">
 
-- Now you need to pick your COM port, if you haven't connected your mat to your computer using the USB cable, do so now.
-- If you don't know which COM port is the right one, unplug the mat and open the COM port drop down menu and take note of the COM ports. Then, click away (to close the COM port drop down menu), plug in your mat, and re-open the COM port drop down menu. Check to see if any new COM port numbers have shown up. If yes, that's the mat's COM port, select it.
+- Now you need to pick your COM port, if you haven't connected your mat to your computer using the USB cable, connect it now.
+- If you don't know which COM port is the right one, unplug the mat and open the COM port drop down menu and take note of the COM ports. Then, click outside the dropdown menu to close it, plug in your mat, and re-open the COM port drop down menu. Check to see if any new COM port numbers have shown up. If yes, that's the mat's COM port, select it.
 
 <img src="images/Reflash_9_ComPort.png" width="600"> 
 
@@ -62,12 +62,12 @@ These steps will revert the mat back to its original programming so it can be us
 
 <img src="images/Reflash_11_progress.png" width="600"> 
 
-- When it's finished you've succesfully uploaded the original TrampleTek Blue code!
+- When it's finished you've successfully uploaded the original TrampleTek Blue code!
 
 <img src="images/Reflash_12_done.png" width="600">
 
-## Now unplug and re-plug in the mat and you'll see the blue light start flashing, this indicates that it's searching for a nearby TrampleTek Blue socket to pair with! Plug in your original TrampleTek Blue socket nearby and you're all ready to go.
+## Now unplug and re-plug in the mat and you'll see the blue light will start flashing, this indicates that it's searching for a nearby TrampleTek Blue socket to pair with! Plug in your original TrampleTek Blue socket nearby and you're all ready to go.
 
-## Go [here](https://github.com/ASCKing9/TrampleTek-Blue-code/blob/main/TrampleTekBlue_socketVerison/TrampleTek%20Instructions%20Brochure%20reduced%20color.pdf) for the original TrampleTek Blue instruction manual.
+## Go [here](https://github.com/AppliedSensorCo/ASC-product-code/blob/main/TrampleTek%20Instructions%20Brochure.pdf) for the original TrampleTek Blue instruction manual.
 
 Please join the [ASC Discord server](https://discord.gg/cB9P6NmYJg) if you have questions or comments about this page.
