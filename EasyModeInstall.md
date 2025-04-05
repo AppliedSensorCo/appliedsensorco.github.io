@@ -41,7 +41,7 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
 </esp-web-install-button>
 
 
-<esp-web-install-button manifest="https://raw.githubusercontent.com/ASCKing9/TrampleTek-Blue-code/refs/heads/main/TrampleTek_Debug/SleepMatBeta/TrampleTek_Sleep.json" install-supported="">
+<esp-web-install-button manifest="https://raw.githubusercontent.com/AppliedSensorCo/ASC-product-code/main/SlumberTek/SlumberTek.json" install-supported="">
         <button slot="activate">SlumberTek Firmware install button</button>
         <i slot="unsupported">
           The option is not available because your browser does not support Web
