@@ -48,7 +48,7 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
         </i>
 </esp-web-install-button>
 
-###(Note: If you don't see two purple buttons above this line, you may need to switch to a different browser or check your browser settings.)
+### (Note: If you don't see two purple buttons above this line, you may need to switch to a different browser or check your browser settings.)
 
 - The below pop-up will appear asking to select the COM port for your device. You can plug and un-plug your devices's USB cable into the computer you're using to see which COM port appears and disappears, pick that option and press "connect." (If you don't see anything showing up when you plug your USB cable into the computer you may have a USB driver issue, if you hit cancel a pop-up will give you some info on how to install the right USB drivers).
 
