@@ -34,8 +34,8 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
 <esp-web-install-button manifest="https://raw.githubusercontent.com/AppliedSensorCo/ASC-product-code/main/TrampleTekBlue/TrampleTekBlue.json" install-supported="">
         <button slot="activate">TrampleTek Blue Firmware install button</button>
         <i slot="unsupported">
-          The option is not available because your browser does not support Web
-          Serial. Open this page in Google Chrome or Microsoft Edge instead<span class="not-supported-i hidden">
+          <b><u> You have no buttons! This is an error message! <u><b> The buttons are not here because your browser does not support Web
+          Serial or your browser is blocking them! Try this page again in Google Chrome or Microsoft Edge instead<span class="not-supported-i hidden">
             (but not on your iOS device)</span>.
         </i>
 </esp-web-install-button>
@@ -44,9 +44,6 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
 <esp-web-install-button manifest="https://raw.githubusercontent.com/AppliedSensorCo/ASC-product-code/main/SlumberTek/SlumberTek.json" install-supported="">
         <button slot="activate">SlumberTek Firmware install button</button>
         <i slot="unsupported">
-          The option is not available because your browser does not support Web
-          Serial. Open this page in Google Chrome or Microsoft Edge instead<span class="not-supported-i hidden">
-            (but not on your iOS device)</span>.
         </i>
 </esp-web-install-button>
 
