@@ -106,7 +106,7 @@ My COM port was COM9 in this example.
 <img src="images/USBWeb_21_rename.png" width="400">
 
 ## Next Steps
-If this worked, then you can **SKIP** the Manual Installation section and move directly to [understanding the UI elements of the TrampleTek Blue (Home Assistant version)](https://appliedsensorco.github.io/usingHAui.html).
+If this worked, then you can **SKIP** the Manual Installation section and move directly to understanding the [UI elements of TrampleTek Blue](https://appliedsensorco.github.io/usingHAui.html) or the [UI elements of SlumberTek](https://docs.asc.com/SlumberTek.html)
 
 If you want to take full control of your TrampleTek Blue or SlumberTek then check out these optional instructions [(Optional) Taking Control of your device in ESPHome](https://appliedsensorco.github.io/esphometakecontrol.html)
 
