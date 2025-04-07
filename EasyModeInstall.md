@@ -29,7 +29,9 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
 
 - ESP Web tools only work with *Google Chrome* or *Microsoft Edge*. Open another window of your browser, as it can be hard to read the instructions and use the ESP Web tool (it covers the webpage).
 
-- Click the button either the "TrampleTek Blue Firmware install" or "SlumberTek Firmware install" button right below this line to start the ESP Web tool:
+- Click on either the "TrampleTek Blue Firmware install" or "SlumberTek Firmware install" button below to start the ESP Web tool:
+
+📡 Heads up! By installing the firmware you agree to allow your device to send anonymous data to ASC to improve future firmware. If you'd rather not help improve future firmware, you can turn it off in the [settings](https://docs.asc.com/SlumberTek.html) after you install. (Note: TrampleTek does not currently have this functionality).
   
 <esp-web-install-button manifest="https://raw.githubusercontent.com/AppliedSensorCo/ASC-product-code/main/TrampleTekBlue/TrampleTekBlue.json" install-supported="">
         <button slot="activate">TrampleTek Blue Firmware install button</button>
@@ -48,7 +50,7 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
         </i>
 </esp-web-install-button>
 
-### (Note: If you don't see two purple buttons above this line, you may need to switch to a different browser or check your browser settings.)
+### If you don't see two purple buttons above this line, you may need to switch to a different browser or check your browser settings.
 
 - The below pop-up will appear asking to select the COM port for your device. You can plug and un-plug your devices's USB cable into the computer you're using to see which COM port appears and disappears, pick that option and press "connect." (If you don't see anything showing up when you plug your USB cable into the computer you may have a USB driver issue, if you hit cancel a pop-up will give you some info on how to install the right USB drivers).
 
