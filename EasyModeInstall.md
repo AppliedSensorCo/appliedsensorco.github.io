@@ -31,7 +31,7 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
 
 - Click on either the "TrampleTek Blue Firmware install" or "SlumberTek Firmware install" button below to start the ESP Web tool:
 
-📡 Heads up! By installing the firmware, you agree to allow your device to **send anonymous data to ASC** to help improve future firmware. If you'd rather not help improve future firmware, you can turn it off in [settings](https://docs.asc.com/SlumberTek.html) after installation. (Note: TrampleTek does not currently send data).
+📡 Heads up! By installing the firmware, you agree to allow your device to **send anonymous data to ASC** to help improve future firmware. If you'd rather not help improve future firmware, you can turn it off in [settings](https://docs.asc.com/SlumberTek.html) after installation. (Note: TrampleTek Blue does not currently send data).
   
 <esp-web-install-button manifest="https://raw.githubusercontent.com/AppliedSensorCo/ASC-product-code/main/TrampleTekBlue/TrampleTekBlue.json" install-supported="">
         <button slot="activate">TrampleTek Blue Firmware install button</button>
