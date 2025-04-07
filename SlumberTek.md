@@ -6,9 +6,12 @@ nav_order: 9
 
 # Explanation of the User Interface (UI) entities of the SlumberTek
 
+### To make SlumberTek smarter over time, **your device shares anonymous data with ASC**. Want to opt out or won’t be using internet? Just switch off “Send Data to ASC” below, no hard feelings 😁!
+
 ## User Interface Overview
 
 <img src="images/Slumbertek_1_UI_021.png" width="400">
+
 (When using the default Home Assistant Overview the full names of the entities will not be visible many of the entities have longer names. You will need to hover your mouse over your entities to see their full names, or use a custom Home Assistant layout add-on to change the default view.) 
 
 ### The UI has four UI entities **"Calibration"**, **"Transition to Off Delay"**, **"Transition to On Delay"**, and **"Bed Sensor"**.
@@ -28,6 +31,7 @@ Binary occupancy sensor that says when someone is in bed (occupied) or not (clea
 ## Diagnostic UI entities (only visible if you go into the ESPHome device settings)
 
 <img src="images/Slumbertek_2_UI_021.png" width="400">
+
 (Default Home Assistant view cuts off full names, hover your mouse over your entities to see their full names.)
 
 ### There are thirteen Diagnostic entities:
