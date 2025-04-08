@@ -8,7 +8,12 @@ nav_order: 1
 
 ## These instructions are optional and only if you want to view device logs and edit the YAML code directly after doing the [Easy Mode Installation](https://appliedsensorco.github.io/EasyModeInstall.html).
 
-## If you "Take Control" of your TrampleTek Blue or SlumberTek, you will still get Home Assistant notifications when there is an update. Note: If you update your firmware through Home Assistant OTA after taking control, it may erase your saved Wi-Fi credentials. You will need to use Bluetooth, or the device's fallback hotspot, or connect via the [ESPHome web](https://web.esphome.io/), or reload the firmware completely using the [Easy Mode instructions](https://appliedsensorco.github.io/EasyModeInstall.html) to get the device reconnected to your Wi-Fi.
+## If you "Take Control" of your TrampleTek Blue or SlumberTek, you'll still receive Home Assistant update notifications.
+Note: If you update the firmware using Home Assistant's OTA feature after taking control, it may erase your saved Wi-Fi credentials. To reconnect, you'll need to use the device’s fallback hotspot, connect via [ESPHome Web](https://web.esphome.io/), or reinstall the firmware using the [Easy Mode instructions](https://appliedsensorco.github.io/EasyModeInstall.html).
+
+### If you do update via OTA after "Taking Control", it's a good idea to delete the device from ESPHome.
+Don’t worry, you're not deleting the actual device. It will automatically reappear under Discovered Devices (click the **Show** button in the top-right corner of the ESPHome dashboard).
+Deleting and re-"Taking Control" ensures you're working with the most current code. If you don’t delete it, the YAML you see will still be from your previous “Take Control” session and may be outdated.
 
 ## These are the step-by-step instructions to "Take Control" of your TrampleTek Blue device in ESPHome.
 
