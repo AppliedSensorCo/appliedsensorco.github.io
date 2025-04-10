@@ -63,13 +63,14 @@ My COM port was COM9 in this example.
 <img src="images/USBWeb_2_InstallFirmware.png" width="400"> 
 
 - You will get another pop-up to confirm, click "Install" (firmware version will be different from this image).
-### WARNING! I'VE BEEN GETTING REPORTS OF BROWSER CRASHES AFTER THE INSTALL STEP COMPLETES (3/10/25). If that happens, open this page back up and press the "Connect" button at the top of this page again, select your COM port, then click on "Connect to Wi-Fi" to continue through the instructions. The firmware is installed, something is just going wrong with the ESP web tool and it's crashing the browser.
 
 <img src="images/USBWeb_3_InstallFirmwareConfirm.png" width="400"> 
 
 - At first it will say "Erasing" for a bit, and then it will start to install.
 
 <img src="images/USBWeb_4_WaitingToInstall.png" width="400">
+
+### WARNING! I'VE BEEN GETTING REPORTS OF BROWSER CRASHES AFTER THE INSTALL STEP COMPLETES (4/10/25). If that happens, open this page back up and press the "Connect" button at the top of this page again, select your COM port, then click on "Connect to Wi-Fi" to continue through the instructions. The firmware is installed, something is just going wrong with the ESP web tool and it's crashing the browser.
 
 - After a few minutes it should be successful!
 
