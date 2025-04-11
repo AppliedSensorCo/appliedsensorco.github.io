@@ -28,6 +28,7 @@ Plug the USB-C cable back into the device. You then must hold the “Boot” but
 You will not have access to the "Reset" button, I suggest (1) unplugging the USB cable from your computer, (2) plugging the USB-C end into the device, (3) press and hold the "Boot" button with your little screwdriver or toothpick while plugging the USB back into the computer (you may need a third hand or get creative with your grip!).
 
 <img src="images/Open_cover_reset_boot.png" width="600"> 
+
 (Top view of the board and the "Reset" and "Boot" buttons)
 
 -	You will need to go through the installation instruction steps and return to this screen to try the installation again.
