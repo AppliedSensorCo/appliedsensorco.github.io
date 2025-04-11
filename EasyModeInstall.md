@@ -25,6 +25,9 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
 
 ## (Warning) Easy Mode installation is dependent on web-based tools that might change. If this mode works, great(!), you can skip the Manual Install section. If this doesn't work jump to the [Manual Installation](https://appliedsensorco.github.io/Manual-Installation/) section.
 
+
+<iframe width="480" height="360" src="http://www.youtube.com/embed/4sYf2Vkg71Q" frameborder="0"> </iframe>
+
 <iframe 
     width="100%" 
     height="315" 
