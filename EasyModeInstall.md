@@ -29,7 +29,7 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
   <iframe 
     width="100%" 
     height="315" 
-    src="https://www.youtube.com/watch?v=4sYf2Vkg71Q" 
+    src="http://www.youtube.com/embed/4sYf2Vkg71Q" 
     title="Easy Mode Install Tutorial"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
