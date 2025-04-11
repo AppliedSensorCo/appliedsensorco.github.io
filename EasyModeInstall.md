@@ -25,7 +25,19 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
 
 ## (Warning) Easy Mode installation is dependent on web-based tools that might change. If this mode works, great(!), you can skip the Manual Install section. If this doesn't work jump to the [Manual Installation](https://appliedsensorco.github.io/Manual-Installation/) section.
 
-## These are the step-by-step instructions
+<p style="text-align: center;">
+  <iframe 
+    width="100%" 
+    height="315" 
+    src="https://www.youtube.com/watch?v=4sYf2Vkg71Q" 
+    title="Easy Mode Install Tutorial"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</p>
+
+## You can watch the above video or follow the step-by-step instructions below
 
 - ESP Web tools only work with *Google Chrome* or *Microsoft Edge*. Open another window of your browser, as it can be hard to read the instructions and use the ESP Web tool (it covers the webpage).
 
