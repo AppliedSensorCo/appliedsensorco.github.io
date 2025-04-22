@@ -27,10 +27,13 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
 
 ## You can watch the videos here or follow the step-by-step instructions below
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/4sYf2Vkg71Q?si=UqCthmTVpdZ0zf8B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## SlumberTek & TrampleTek Easy Mode Install – Full Tutorial & Fixes
 
 <iframe width="100%" height="315" src="https://youtube.com/embed/dUKVttC4c4Q?si=fHLXH6EFcx_rD7p6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Install SlumberTek on a box spring bed
 
 <iframe width="100%" height="315" src="https://youtube.com/embed/us4oqqxydCk?si=gRAxwMvxtb9tkbsr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Install SlumberTek on a bed with slats
 
 - ESP Web tools only work with *Google Chrome* or *Microsoft Edge*. Open another window of your browser, as it can be hard to read the instructions and use the ESP Web tool (it covers the webpage).
 
