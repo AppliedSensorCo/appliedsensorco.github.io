@@ -25,16 +25,12 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
 
 ## (Warning) Easy Mode installation is dependent on web-based tools that might change. If this mode works, great(!), you can skip the Manual Install section. If this doesn't work jump to the [Manual Installation](https://appliedsensorco.github.io/Manual-Installation/) section.
 
+## You can watch the videos here or follow the step-by-step instructions below
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/4sYf2Vkg71Q?si=UqCthmTVpdZ0zf8B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<div style="display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
-  <iframe width="100%" height="315" src="https://youtube.com/embed/dUKVttC4c4Q?si=fHLXH6EFcx_rD7p6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://youtube.com/embed/dUKVttC4c4Q?si=fHLXH6EFcx_rD7p6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  <iframe width="100%" height="315" src="hhttps://youtube.com/embed/us4oqqxydCk?si=gRAxwMvxtb9tkbsr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-</div>
-
-## You can watch the above videos or follow the step-by-step instructions below
+<iframe width="100%" height="315" src="https://youtube.com/embed/us4oqqxydCk?si=gRAxwMvxtb9tkbsr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 - ESP Web tools only work with *Google Chrome* or *Microsoft Edge*. Open another window of your browser, as it can be hard to read the instructions and use the ESP Web tool (it covers the webpage).
 
