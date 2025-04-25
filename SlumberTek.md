@@ -17,7 +17,7 @@ nav_order: 9
 ## You can watch a video about the Home Assistant Overview elements here:
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/bvSiEQ0UN-s?si=crrVxkBGSvK0pGKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### The UI has four UI entities **"Calibration"**, **"Transition to Off Delay"**, **"Transition to On Delay"**, and **"Bed Sensor"**.
+### The UI has four entities **"Calibration"**, **"Transition to Off Delay"**, **"Transition to On Delay"**, and **"Bed Sensor"**.
 
 ### Calibration (turn on, lay on bed for at least 30s, get out of bed, turn off)
 This helps set the pressure thresholds for your bed the first time you use the sensor, or as a reset if you make a significant change to your bed set up. To calibration, make sure your device is placed under your mattress at chest level, toggle the calibration switch on, lay on the bed for at least 30s, get out of the bed, toggle the switch off and you're done!
