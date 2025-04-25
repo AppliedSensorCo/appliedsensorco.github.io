@@ -6,17 +6,20 @@ nav_order: 10
 
 # Instructions for putting the mat into Boot Mode
 
+## Here is a video showing how to put TrampleTek or SlumberTek into boot mode, written instructions are below:
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/3GeaTIFy_oo?si=FvUlWXS-YKJIZ2An" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## This should not be necessary for most people, but all computer setups are different and putting the mat into Boot Mode enables it to accept the new code from ESPHome.
 
 - Disconnect the USB-C cable and pop off the protective cover of the circuit board.
 
 <img src="images/Open_cover_start.png" width="600">  
 
--	There is a long plastic clip on the front and back of the protective box keeping it snapped to the circuit board. It’s tight but pry up the front of the protective box to pop it off.
+-	There is a long plastic clip on the front and back of the protective box keeping it snapped to the circuit board. It’s tight, but pry up the front of the protective box to pop it off.
 
 <img src="images/Open_cover_pry_open.png" width="600"> 
 
-- Alternatively, some of the new case designs have a hole that enables you to put a little screwdriver or toothpick in to push the boot button without having to take the case off. The button is a sideways button so be careful putting too much sideways pressure on it and accidentally breaking it off, you should feel a very gentle 'click' when you've pressed the button.
+- Alternatively, some of the new case designs have a hole that enables you to put a little screwdriver or toothpick in to push the boot button without having to take the case off. The button is a sideways button so be careful, **too much sideways pressure on it and accidentally breaking it off**, you should feel a very gentle 'click' when you've pressed the button.
 
 <img src="images/BootMode_case_hole.png" width="600"> 
 <img src="images/BootMode_case_hole_toothpick.png" width="600"> 
