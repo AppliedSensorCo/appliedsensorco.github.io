@@ -9,7 +9,7 @@ nav_order: 10
 ## Here is a video showing how to put TrampleTek or SlumberTek into boot mode, written instructions are below:
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/3GeaTIFy_oo?si=FvUlWXS-YKJIZ2An" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## This should not be necessary for most people, but all computer setups are different and putting the mat into Boot Mode enables it to accept the new code from ESPHome.
+## This should not be necessary for most people, but all computer setups are different and putting your device into Boot Mode enables it to accept the new code from ESPHome.
 
 - Disconnect the USB-C cable and pop off the protective cover of the circuit board.
 
