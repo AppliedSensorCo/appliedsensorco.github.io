@@ -12,11 +12,10 @@ nav_order: 9
 
 <img src="images/Slumbertek_1_UI_021.png" width="400">
 
-(When using the default Home Assistant Overview the full names of the entities will not be visible many of the entities have longer names. You will need to hover your mouse over your entities to see their full names, or use a custom Home Assistant layout add-on to change the default view.) 
+(SlumberTek has long UI entity names and will not be fully visible, you will need to hover your mouse over your entities to see their full names.) 
 
-## You can watch the videos about the Home Assistant Overview elements here:
+## You can watch a video about the Home Assistant Overview elements here:
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/bvSiEQ0UN-s?si=crrVxkBGSvK0pGKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-## SlumberTek UI Overview in Home Assistant
 
 ### The UI has four UI entities **"Calibration"**, **"Transition to Off Delay"**, **"Transition to On Delay"**, and **"Bed Sensor"**.
 
