@@ -43,7 +43,7 @@ Text entity to explain your current auto-calibration status, it will give info a
 ### There are fourteen Diagnostic entities:
 
 ### Auto-calibration interval (0 is off)
-The number of hours between when auto-calibration triggers, can be between 0 and 24 hrs. If set to 0, auto-calibration turns off and the "Empty Bed value" and "Full Bed value" will remain fixed.
+This sets the number of hours between automatic calibration events, from 0 to 24 hours. If set to 0, auto-calibration is turned off, and the "Empty Bed value" and "Full Bed value" will remain fixed. If set above 0, auto-calibration will trigger every X hours and update the "Empty Bed value" and "Full Bed value" based on the previous 24 hours of "Pressure Voltage" data collected since the last calibration. Auto-calibration exists to help overcome slow daily and weekly changes in "Pressure Voltage" from temperature, humidity, and textile relaxation.
 
 ### Detection Sensitivity (lower is more sensitive)
 Lower values help to trigger events quicker. When "Increased out of bed sensitivity mode" is *off* this value is only applied to getting into bed events ("on"). When "Increased out of bed sensitivity mode" is on, the default is increased to 6 to this applies to both the "on" and "off" events.
