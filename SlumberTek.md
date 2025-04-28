@@ -10,11 +10,11 @@ nav_order: 9
 
 ## User Interface Overview
 
-<img src="images/Slumbertek_1_UI_021.png" width="400">
+<img src="images/Slumbertek_2_UI_023.png" width="400">
 
 (SlumberTek has long UI entity names and will not be fully visible, you will need to hover your mouse over your entities to see their full names.) 
 
-## You can watch a video about the Home Assistant Overview elements here:
+## You can watch a video about the Home Assistant Overview elements here (new 0.2.3 UI not yet added to video):
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/bvSiEQ0UN-s?si=crrVxkBGSvK0pGKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### The UI has four entities **"Calibration"**, **"Transition to Off Delay"**, **"Transition to On Delay"**, and **"Bed Sensor"**.
@@ -31,13 +31,19 @@ This is the delay before the sensor sends an "on" signal to Home Assistant. Typi
 ### Bed Sensor
 Binary occupancy sensor that says when someone is in bed (occupied) or not (clear).
 
+### Calibration Status
+Text entity to explain your current auto-calibration status, it will give info about whether auto-calibration is active and when your next auto-calibration is.
+
 ## Diagnostic UI entities (only visible if you go into the ESPHome device settings)
 
-<img src="images/Slumbertek_2_UI_021.png" width="400">
+<img src="images/Slumbertek_1_UI_023.png" width="400">
 
 (Default Home Assistant view cuts off full names, hover your mouse over your entities to see their full names.)
 
-### There are thirteen Diagnostic entities:
+### There are fourteen Diagnostic entities:
+
+### Auto-calibration interval (0 is off)
+The number of hours between when auto-calibration triggers, can be between 0 and 24 hrs. If set to 0, auto-calibration turns off and the "Empty Bed value" and "Full Bed value" will remain fixed.
 
 ### Detection Sensitivity (lower is more sensitive)
 Lower values help to trigger events quicker. When "Increased out of bed sensitivity mode" is *off* this value is only applied to getting into bed events ("on"). When "Increased out of bed sensitivity mode" is on, the default is increased to 6 to this applies to both the "on" and "off" events.
