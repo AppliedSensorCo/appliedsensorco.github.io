@@ -8,7 +8,8 @@ esp-web-install-button button {
     color: var(--esp-tools-button-text-color, #fff);
     background-color: var(--esp-tools-button-color, #5A2D8A);
     border-radius: var(--esp-tools-button-border-radius, 10px);
-    padding: 30px 40px;
+    padding: 10px 20px;
+    margin: 12px 8px
     font-size: 16px;
     border: none;
     cursor: pointer;
