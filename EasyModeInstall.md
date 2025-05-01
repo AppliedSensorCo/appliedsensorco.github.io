@@ -4,12 +4,15 @@ title: Easy Mode Installation
 nav_order: 3
 ---
 <style>
+esp-web-install-button {
+  display: block;
+  margin: 12px 0; /* Adds space above and below each button block */
+}
 esp-web-install-button button {
     color: var(--esp-tools-button-text-color, #fff);
     background-color: var(--esp-tools-button-color, #5A2D8A);
     border-radius: var(--esp-tools-button-border-radius, 10px);
     padding: 10px 20px;
-    margin: 12px 8px
     font-size: 16px;
     border: none;
     cursor: pointer;
