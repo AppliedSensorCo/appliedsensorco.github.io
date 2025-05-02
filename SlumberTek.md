@@ -8,13 +8,13 @@ nav_order: 9
 
 ### To make SlumberTek smarter over time, **your device shares anonymous data with ASC**. Want to opt out or won’t be using internet? Just switch off “Send Data to ASC” below, no hard feelings 😁!
 
-## User Interface Overview
+## User Interface Overview (version 0.2.3)
 
 <img src="images/Slumbertek_2_UI_023.png" width="400">
 
 (SlumberTek has long UI entity names and will not be fully visible, you will need to hover your mouse over your entities to see their full names.) 
 
-## You can watch a video about the Home Assistant Overview elements here (new 0.2.3 UI not yet added to video):
+## You can watch a video about the Home Assistant Overview elements here (new 0.3.0 UI not yet added to video):
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/bvSiEQ0UN-s?si=crrVxkBGSvK0pGKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### The UI has four entities **"Calibration"**, **"Transition to Off Delay"**, **"Transition to On Delay"**, and **"Bed Sensor"**.
@@ -39,6 +39,8 @@ Text entity to explain your current auto-calibration status, it will give info a
 <img src="images/Slumbertek_1_UI_023.png" width="400">
 
 (Default Home Assistant view cuts off full names, hover your mouse over your entities to see their full names.)
+
+# This is out date as of 5/2/25, a new 0.3.0 changed and added several new entities, page update will happen in the next week or so
 
 ### There are fourteen Diagnostic entities:
 
