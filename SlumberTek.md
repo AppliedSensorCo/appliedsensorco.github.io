@@ -15,7 +15,7 @@ nav_order: 9
 (SlumberTek has long UI entity names and will not be fully visible, you will need to hover your mouse over your entities to see their full names.) 
 
 ## You can watch a video about the Home Assistant Overview elements here (new 0.3.0 UI not yet added to video):
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/bvSiEQ0UN-s?si=crrVxkBGSvK0pGKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/hSl5vFsuffg?si=7LCHLPQPrk4VTI1u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### The UI has five entities **"Calibration"**, **"Transition to Off Delay"**, **"Transition to On Delay"**, **"Bed Sensor"**, **"Calibration Status"**.
 
