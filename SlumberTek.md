@@ -39,6 +39,9 @@ Text entity to explain your current auto-calibration status, it will give info a
 <img src="images/Slumbertek_1_UI_030.png" width="400">
 <img src="images/Slumbertek_2_UI_030.png" width="400">
 
+## You can watch the deep-dive video on SlumberTek's Algorithm and some general troubleshooting tips here:
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/rIQU2vCFwZY?si=tPg_PAfDXCwfKUFd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 (Default Home Assistant view cuts off full names, hover your mouse over your entities to see their full names.)
 
 ### There are twenty Diagnostic entities:
