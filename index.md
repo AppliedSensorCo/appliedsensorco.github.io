@@ -15,4 +15,4 @@ This documentation will help you through integrate your [TrampleTek Blue](https:
 
 You can also reach out to hello@asc.com for additional questions about ASC.
 
-Link to the github repo for these web page is [here](https://github.com/AppliedSensorCo/appliedsensorco.github.io).
+Link to the github repo for these web pages is [here](https://github.com/AppliedSensorCo/appliedsensorco.github.io).
