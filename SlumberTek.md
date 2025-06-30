@@ -6,7 +6,7 @@ nav_order: 9
 
 # Explanation of the User Interface (UI) entities of the SlumberTek
 
-### To make SlumberTek smarter over time, **your device shares anonymous data with ASC**. Want to opt out or won’t be using internet? Just switch off “Send Data to ASC” below, no hard feelings 😁!
+### To make SlumberTek smarter over time, **your device shares data with ASC**. Want to opt out or won’t be using internet? Just switch off “Send Data to ASC” below, no hard feelings 😁!
 
 ## User Interface Overview (version 0.3.0)
 
@@ -95,7 +95,7 @@ Filters out noise and spikes in "Pressure Voltage". Higher values provide a smoo
 Displays how many times the device has restarted. Useful for diagnosing firmware stability.
 
 ### Send Data to ASC (If you run no internet HA turn this off)
-This setting is on by default, and is immensely helpful in identifying ways to improve firmware and software! If your Home Assistant is connected to the internet, this option anonymously sends encrypted MQTT posts to ASC's private servers. The data is labeled using your ESPHome ${name}, not your ${friendly_name}, which is defaultly slumbertek-XXXXXX (XXXXXX is the last 6 digits of your device's MAC address). ASC does not know your device's mac address and there is no way for us to identify your user data. If you have any questions about this please reach out directly to hello@asc.com. 
+This setting is on by default, and is immensely helpful in identifying ways to improve firmware and software! If your Home Assistant is connected to the internet, this option sends encrypted MQTT posts to ASC's private servers. The data is labeled using your ESPHome ${name}, not your ${friendly_name}, which is defaultly slumbertek-XXXXXX (XXXXXX is the last 6 digits of your device's MAC address). ASC does not know your device's mac address and there is no way for us to identify your user data. If you have any questions about this please reach out directly to hello@asc.com. 
 
 ### SlumberTek Restart
 Manually restarts your device remotely.
