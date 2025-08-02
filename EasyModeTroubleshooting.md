@@ -28,7 +28,7 @@ Instead of getting a pop up UI to easily add your device into Home Assistant you
 
 The PORT should be 6053 (that's ESPHome's default port), but your IP address is unique to your device. There are several ways to find the IP address of your device. I suggest plugging your device into your computer, connecting it to [ESP Web tools](https://web.esphome.io/) and then opening up the LOGS.
 
-That will get you to a lot of output (you may need to press the "Restart" button within the log page) and you can scroll through the output to find your device's IP:
+That will get you to a lot of output (you may need to press the "Restart" button within the LOGS) and you can scroll through the output to find your device's IP:
 
 <img src="images/ESPHome_Adopt_5_LoggerStop.png" width="600">
 
