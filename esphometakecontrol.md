@@ -70,6 +70,6 @@ Deleting and re-"Taking Control" ensures you're working with the most current co
 <img src="images/ESPHome_mat_yaml_save_upload.png" width="600"> 
 
 ## Next Steps
-**SKIP** the Manual Installation section and move directly to [understanding the UI elements of the TrampleTek Blue (Home Assistant version)](https://appliedsensorco.github.io/usingHAui.html).
+**SKIP** the Manual Installation section and move directly to understanding the [UI elements of TrampleTek Blue](https://appliedsensorco.github.io/usingHAui.html) or the [UI elements of SlumberTek](https://docs.asc.com/SlumberTek.html)
 
 Please join the [ASC Discord server](https://discord.gg/cB9P6NmYJg) if you have questions or comments about this page.
