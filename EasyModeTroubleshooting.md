@@ -14,7 +14,7 @@ I haven't found a consistent reason that this issue comes up 🫤. The error oft
 
 <img src="images/Expired_Auth_issue.png" width="600">
 
-The only solution I know is unfortunately to re-install the firmware to your device. That will recreate the encryption authentication.
+If you happen to know the encryption key you might be able to enter it after you click on the error, but typically the only solution is unfortunately to re-install the firmware to your device. That will recreate the encryption authentication.
 
 ### 2) ESPHome didn't automatically share your device IP with Home Assistant ([video link](https://youtu.be/4sYf2Vkg71Q?si=OFX0iIcHcgAUsIJX&t=314))
 
