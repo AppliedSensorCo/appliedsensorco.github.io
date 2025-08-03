@@ -8,7 +8,7 @@ nav_order: 2
 
 ## Sometimes things don't always go so smoothly, or you have a unique Home Assistant setup that adds a few unexpected hurdles! Hopefully one of these tips will help you.
 
-### 1)  Home Assistant API encryption issues ([video link](https://youtu.be/4sYf2Vkg71Q?si=KegT5pdxMYknnxuy&t=280))
+## 1)  Home Assistant API encryption issues ([video link](https://youtu.be/4sYf2Vkg71Q?si=KegT5pdxMYknnxuy&t=280))
 
 I haven't found a consistent reason that this issue comes up 🫤. The error often shows up soon after an install and may look something like this:
 
@@ -16,7 +16,7 @@ I haven't found a consistent reason that this issue comes up 🫤. The error oft
 
 If you happen to know the encryption key you might be able to enter it after you click on the error, but typically the only solution is unfortunately to re-install the firmware to your device. That will recreate the encryption authentication.
 
-### 2) ESPHome didn't automatically share your device IP with Home Assistant ([video link](https://youtu.be/4sYf2Vkg71Q?si=OFX0iIcHcgAUsIJX&t=314))
+## 2) ESPHome didn't automatically share your device IP with Home Assistant ([video link](https://youtu.be/4sYf2Vkg71Q?si=OFX0iIcHcgAUsIJX&t=314))
 
 When you go to add your new ESPHome device into HA:
 
@@ -24,13 +24,33 @@ When you go to add your new ESPHome device into HA:
 
 Instead of getting a pop up UI to easily add your device into Home Assistant you get this pop-up:
 
-<img src="images/DeviceSetup_2_IPaddress.png" width="600">
+<img src="images/DeviceSetup_2_IPaddress.png" width="400">
 
-The PORT should be 6053 (that's ESPHome's default port), but your IP address is unique to your device. There are several ways to find the IP address of your device. I suggest plugging your device into your computer, connecting it to [ESP Web tools](https://web.esphome.io/) and then opening up the LOGS.
+The PORT should be 6053 (that's ESPHome's default port), but your IP address is unique to your device.
 
-That will get you to a lot of output (you may need to press the "Restart" button within the LOGS) and you can scroll through the output to find your device's IP:
+### At this point you will need to find your device's IP address, here are two methods: 
 
-<img src="images/ESPHome_Adopt_5_LoggerStop.png" width="600">
+### Make sure your device is plugged into your computer, then connect it to the [ESP Web tools](https://web.esphome.io/) (you can go to the [Easy Mode Install](https://docs.asc.com/EasyModeInstall.html) instructions if you need help doing this).
+
+### Option #1 for finding your device's IP:
+
+If you see this dialog box (or maybe a similiar one with more options) click on "Visit Device":
+
+<img src="images/Visit_device.png" width="400">
+
+That will open up a new browser tab to your device and you can get the IP address from the web address line:
+
+<img src="images/Visit_device_IP.png" width="600">
+
+### Option #2 for finding your device's IP:
+
+If "Visit Device" is not an option, click on "Logs & Console":
+
+<img src="images/Logs_Console.png" width="400">
+
+You will likely see a blank screen, and you may need to press the "Reset Device" button at the bottom of the Logs screen. That will prompt the device to restart and you'll see all the startup information. Scroll through it to this section to find your device's IP:
+
+<img src="images/Logs_screen_reset_IP.png" width="600">
 
 This [video link](https://youtu.be/4sYf2Vkg71Q?si=OFX0iIcHcgAUsIJX&t=314) explains how to do this with more detail.
 
