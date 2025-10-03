@@ -66,12 +66,12 @@ If you are a Home Assistant power-user I suggest jumping to [Manual Installation
         </i>
 </esp-web-install-button>
 
-<esp-web-install-button manifest="https://raw.githubusercontent.com/AppliedSensorCo/ASC-product-code/main/SlumberTek/Rollback-versions/0-2-3/SlumberTek-ver023.json" install-supported="">
+<!-- <esp-web-install-button manifest="https://raw.githubusercontent.com/AppliedSensorCo/ASC-product-code/main/SlumberTek/Rollback-versions/0-2-3/SlumberTek-ver023.json" install-supported="">
         <button slot="activate">SlumberTek Firmware rollback backup to previous version (0.2.3)</button>
         <i slot="unsupported">
             This would be the SlumberTek rollback button.
         </i>
-</esp-web-install-button>
+</esp-web-install-button> -->
 
 ### If you don't see two purple buttons above this line, you may need to switch to a different browser or check your browser settings.
 
