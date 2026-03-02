@@ -89,6 +89,8 @@ When prompted, accept all permissions. The most important ones are:
 
 3. Tap **Connect** on your `ST_...` device
 
+<img src="images/050s_add_device.png" width="400">
+
 <img src="images/060s_android_add_your_smart_mat_list_connect.png" width="400">
 
 ---
