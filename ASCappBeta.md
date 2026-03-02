@@ -64,7 +64,7 @@ You will receive a **direct TestFlight link** from ASC. Use that link to install
 
 ---
 
-## 3) Accept permissions (don’t skip these)
+## 3) Accept permissions
 
 When prompted, accept all permissions. The most important ones are:
 
