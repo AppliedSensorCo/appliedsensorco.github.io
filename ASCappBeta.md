@@ -37,11 +37,11 @@ If you update firmware by accident, email us and we’ll send the correct origin
 ### Android (Google Play beta link)
 You will receive a **direct Google Play testing link** from ASC. Use that link to install the app.
 
-<img src="images/000s_android_email_app_link.png" width="600">
+<img src="images/000s_android_email_app_link.png" width="400">
 
-<img src="images/004s_android_google_play_internal_test_page.png" width="600">
+<img src="images/004s_android_google_play_internal_test_page.png" width="400">
 
-<img src="images/010s_android_play_store_install_button.png" width="600">
+<img src="images/010s_android_play_store_install_button.png" width="400">
 
 ### iOS (TestFlight link)
 You will receive a **direct TestFlight link** from ASC. Use that link to install the app.
@@ -58,9 +58,9 @@ You will receive a **direct TestFlight link** from ASC. Use that link to install
 3. Confirm your email using the **OTP** code sent to your inbox
 4. Sign in
 
-<img src="images/023s_android_onboarding_who_we_are.png" width="600">
+<img src="images/023s_android_onboarding_who_we_are.png" width="400">
 
-<img src="images/029s_android_login_screen.png" width="600">
+<img src="images/029s_android_login_screen.png" width="400">
 
 ---
 
@@ -72,11 +72,11 @@ When prompted, accept all permissions. The most important ones are:
 - **Location:** Choose **Precise** + **While using the app**
 - **Nearby Devices:** Allow
 
-<img src="images/020s_android_notifications_permission_prompt.png" width="600">
+<img src="images/020s_android_notifications_permission_prompt.png" width="400">
 
-<img src="images/041s_android_location_permission_prompt.png" width="600">
+<img src="images/041s_android_location_permission_prompt.png" width="400">
 
-<img src="images/045s_android_nearby_devices_permission_prompt.png" width="600">
+<img src="images/045s_android_nearby_devices_permission_prompt.png" width="400">
 
 ---
 
@@ -89,7 +89,7 @@ When prompted, accept all permissions. The most important ones are:
 
 3. Tap **Connect** on your `ST_...` device
 
-<img src="images/060s_android_add_your_smart_mat_list_connect.png" width="600">
+<img src="images/060s_android_add_your_smart_mat_list_connect.png" width="400">
 
 ---
 
@@ -99,7 +99,7 @@ When prompted, accept all permissions. The most important ones are:
 2. Enter the Wi-Fi password
 3. Tap **Verify** (or the confirm button shown in the app)
 
-<img src="images/080s_android_available_networks_enter_wifi_credentials.png" width="600">
+<img src="images/080s_android_available_networks_enter_wifi_credentials.png" width="400">
 
 ### If Wi-Fi setup fails the first time (common beta bug)
 Sometimes the first provisioning attempt fails with an error like:
@@ -110,7 +110,7 @@ If that happens:
 - Try again (same network + same password)
 - Most users find the **second attempt works**
 
-<img src="images/075s_android_wifi_settings_loading_connected_toast.png" width="600">
+<img src="images/075s_android_wifi_settings_loading_connected_toast.png" width="400">
 
 ---
 
@@ -121,13 +121,13 @@ SlumberTek must live inside a **Room** in the app.
 - If you don’t have a Room yet, the app will prompt you to create one.
 - Create the Room, then continue.
 
-<img src="images/082s_android_assign_your_smart_mat_add_room_first.png" width="600">
+<img src="images/082s_android_assign_your_smart_mat_add_room_first.png" width="400">
 
-<img src="images/100s_android_add_room_modal.png" width="600">
+<img src="images/100s_android_add_room_modal.png" width="400">
 
 Then name your device and finish the setup flow.
 
-<img src="images/106s_android_select_room_and_rename_device_next.png" width="600">
+<img src="images/106s_android_select_room_and_rename_device_next.png" width="400">
 
 ---
 
@@ -141,13 +141,13 @@ Calibration establishes an initial baseline reading (auto calibration continues 
 4. Wait a few seconds for calibration to begin
 5. **Get into bed normally** and stay there until the calibration finishes (about **30 seconds**)
 
-<img src="images/122s_android_device_page_calibration_row_visible.png" width="600">
+<img src="images/122s_android_device_page_calibration_row_visible.png" width="400">
 
-<img src="images/135s_android_calibration_intro_start_button.png" width="600">
+<img src="images/135s_android_calibration_intro_start_button.png" width="400">
 
-<img src="images/140s_android_calibration_running_0_percent.png" width="600">
+<img src="images/140s_android_calibration_running_0_percent.png" width="400">
 
-<img src="images/160s_android_calibration_activity_detected.png" width="600">
+<img src="images/160s_android_calibration_activity_detected.png" width="400">
 
 After calibration, you should see a success/complete state.
 
@@ -161,7 +161,7 @@ After calibration:
    - The in-app status/indicator updates
    - You start receiving **occupied / unoccupied** notifications
 
-<img src="images/192s_android_device_page_person_detected_notification.png" width="600">
+<img src="images/192s_android_device_page_person_detected_notification.png" width="400">
 
 ---
 
@@ -171,7 +171,7 @@ On the device page, you may see a **Check Firmware Update** option below Calibra
 
 **Do not press it** unless Raymond emails you and tells you to.
 
-<img src="images/125s_android_device_page_offline_toast_example.png" width="600">
+<img src="images/125s_android_device_page_offline_toast_example.png" width="400">
 <!-- Replace the image above with a screenshot that clearly shows the "Check Firmware Update" button once you have it in images/. -->
 
 ---
