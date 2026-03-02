@@ -137,8 +137,8 @@ Then name your device and finish the setup flow.
 
 Calibration establishes an initial baseline reading (auto calibration continues to adjust day-to-day).
 
-1. Open your device from the dashboard
-2. Scroll down to **Calibration** and tap into it
+1. Click on your device from the dashboard to open it
+2. Scroll down to **Calibration** and tap into it (**Known bug** **it can take up to a minute or so for your SlumberTek to connect to the App**)
 3. Tap **Start Calibration**
 4. Wait a few seconds for calibration to begin
 5. **Get into bed normally** and stay there until the calibration finishes (about **45 seconds**)
