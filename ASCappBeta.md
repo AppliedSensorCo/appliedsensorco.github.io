@@ -138,7 +138,7 @@ Then name your device and finish the setup flow.
 Calibration establishes an initial baseline reading (auto calibration continues to adjust day-to-day).
 
 1. Click on your device from the dashboard to open it
-2. Scroll down to **Calibration** and tap into it (**Known bug** **it can take up to a minute or so for your SlumberTek to connect to the App**)
+2. Scroll down to **Calibration** and tap into it (**Known bug: It can take up to a minute or so for your SlumberTek to connect to the App**)
 3. Tap **Start Calibration**
 4. Wait a few seconds for calibration to begin
 5. **Get into bed normally** and stay there until the calibration finishes (about **45 seconds**)
@@ -173,7 +173,7 @@ On the device page, you may see a **Check Firmware Update** option below Calibra
 
 **Do not press it** unless Raymond emails you and tells you to.
 
-<img src="images/125s_android_device_page_offline_toast_example.png" width="400">
+<img src="images/210s_firmware_button.png" width="400">
 <!-- Replace the image above with a screenshot that clearly shows the "Check Firmware Update" button once you have it in images/. -->
 
 ---
@@ -210,7 +210,7 @@ This is beta, so feedback is expected and appreciated.
 
 ## What feedback we want from beta testers
 
-Please email feedback to any existing ASC thread you’re on, or to **beta@asc.com**.
+Please email feedback to any ASC email thread you’re on, or to **beta@asc.com**.
 
 Helpful feedback includes:
 - Your overall experience using the app
