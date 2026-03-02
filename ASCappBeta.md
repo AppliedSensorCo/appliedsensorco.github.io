@@ -35,7 +35,7 @@ If you update firmware by accident, email us and we’ll send the correct origin
 ## 1) Install the ASC Connect Stage app
 
 ### Android (Google Play beta link)
-You will receive a **direct Google Play testing link** from ASC. Use that link to install the app.
+You will receive a **direct Google Play testing link** from ASC for Android or an invite from Apple TestFlight. Use that link to install the app.
 
 <img src="images/000s_android_email_app_link.png" width="400">
 
@@ -171,7 +171,7 @@ After calibration:
 
 On the device page, you may see a **Check Firmware Update** option below Calibration.
 
-**Do not press it** unless Raymond emails you and tells you to.
+**Do not press it** unless you recieve an email telling you to.
 
 <img src="images/210s_firmware_button.png" width="400">
 <!-- Replace the image above with a screenshot that clearly shows the "Check Firmware Update" button once you have it in images/. -->
@@ -190,6 +190,7 @@ Once SlumberTek is on your network, it should show up automatically in Home Assi
    **Bed Calibration XXXXXXXXXXXX** (the X’s are the MAC address)
 
 4. Add it like any other discovered ESPHome device
+5. (optional) Rename device in the ESPHome device section
 
 If it doesn’t appear, email us and include:
 - Your SlumberTek `ST_...` name / MAC
