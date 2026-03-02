@@ -120,7 +120,7 @@ If that happens:
 
 SlumberTek must live inside a **Room** in the app.
 
-- If you don’t have a Room yet, the app will prompt you to create one.
+- If you don’t have a Room yet, you will need to create one.
 - Create the Room, then continue.
 
 <img src="images/082s_android_assign_your_smart_mat_add_room_first.png" width="400">
