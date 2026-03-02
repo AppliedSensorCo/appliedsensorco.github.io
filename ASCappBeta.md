@@ -4,54 +4,221 @@ title: ASC App Beta instructions
 nav_order: 13
 ---
 
-# Under construction
+# ASC App Beta instructions
 
-### Note:
-These instructions are **NOT** on how to connect the Bluetooth socket to Home Assistant. For that, visit the [Home Assistant forums](https://community.home-assistant.io/).
+These instructions walk beta testers through setting up a **SlumberTek** using the **ASC Connect Stage** app, calibrating it, and then adding it to **Home Assistant**.
 
-## Prerequisites
-This section assumes you're a tech wizard of some level and that you have the **ASC Bluetooth socket** (optional with your purchase). If you have a Bluetooth device scanner, you can skip to the bottom to view the possible commands you can send to the socket.
+> **iOS note:** The flow in TestFlight should be very similar, but the screenshots in this guide are from **Android**.
 
 ---
 
-### Step 1: Connect the ASC Bluetooth Socket
-- **Plug in your ASC Bluetooth socket**. Ensure the LED is flashing blue, indicating it’s in pairing mode.
-  - If the LED is solid blue, the socket is already connected to one of your mats or another Bluetooth device. **Unplug any paired mat and disconnect other Bluetooth devices** that may be using the socket.
+## Before you start
 
-### Step 2: Download a Bluetooth Scanner
-- If you don’t have a Bluetooth scanner, download "nRF Connect" by Nordic Semiconductor on Windows, Android, or Apple devices.
-
-<img src="images/BLEhack_1_nrfApp.jpg" width="400" alt="nRF Connect App Screenshot">
-
-### Step 3: Scan for Bluetooth Devices
-- Open **nRF Connect**, press the **Scan** button at the top, and find the Bluetooth device starting with **"TramTek"**. Tap **Connect**.
-
-<img src="images/BLEhack_2_scan.jpg" width="400" alt="Scanning for Bluetooth Devices">
-
-### Step 4: Access the Bluetooth Socket's Characteristics
-- Tap on the **"Unknown Service"**, then tap the **up-arrow** on the **"Unknown Characteristic"** with **"NOTIFY, WRITE"** properties (UUID numbers are listed at the end of these instructions).
-
-<img src="images/BLEhack_3_send.jpg" width="400" alt="Unknown Characteristic with Notify, Write Properties">
-
-### Step 5: Send Commands
-- Select **"TEXT (UTF-8)"** from the drop-down menu, and then send any of the following commands:
-
-<img src="images/BLEhack_4_command.jpg" width="400" alt="Sending Commands to the Bluetooth Socket">
+- **SlumberTek installed + powered:** Place your SlumberTek under your mattress and plug it in.
+- **2.4 GHz Wi-Fi only:** SlumberTek uses ESP32-C3/C6 hardware and does **not** support 5 GHz networks.
+- **Permissions:** When prompted, **allow all permissions** (especially Notifications, Location, and Nearby Devices).
+- **Home Assistant users:** During setup, connect SlumberTek to the **same Wi-Fi network** your Home Assistant uses.
 
 ---
 
-## Commands for the Bluetooth Socket
-All commands are sent as **UTF-8 text** (without quotation marks). Here are the available commands:
+## Important warning about firmware updates
 
-- **"1,0"** - Turn on indefinitely.
-- **"0,0"** - Turn off indefinitely.
-- **"1,x"** - Turn on, then turn off after **x** milliseconds (e.g., `1,5000` to turn on, wait 5 seconds, then turn off).
-- **"0,x"** - Turn off, then turn on after **x** milliseconds (e.g., `0,5000` to turn off, wait 5 seconds, then turn on).
+**Do NOT update SlumberTek firmware unless we explicitly info you to.**
+
+- **Do not** install firmware from docs.asc.com pages.
+- **Do not** press any firmware update buttons in the ASC app.
+
+If you update firmware by accident, email us and we’ll send the correct original firmware file for your device.
 
 ---
 
-## UUIDs for Bluetooth Services and Characteristics
-- **UUID Service #**: `4faf01c2-1b91-45e9-8fcc-c59cc333914b`
-- **UUID Characteristic #**: `af01c21b-9145-e98f-c5cc-9cc31c913a8b`
+## 1) Install the ASC Connect Stage app
 
-Please join the [ASC Discord server](https://discord.gg/cB9P6NmYJg) if you have questions or comments about this page.
+### Android (Google Play beta link)
+You will receive a **direct Google Play testing link** from ASC. Use that link to install the app.
+
+<img src="images/000s_android_email_app_link.png" width="600">
+
+<img src="images/004s_android_google_play_internal_test_page.png" width="600">
+
+<img src="images/010s_android_play_store_install_button.png" width="600">
+
+### iOS (TestFlight link)
+You will receive a **direct TestFlight link** from ASC. Use that link to install the app.
+
+---
+
+## 2) Create your account and sign in
+
+1. Open **ASC Connect Stage**
+2. Create an account:
+   - Email + password
+   - First/last name
+   - Address (required)
+3. Confirm your email using the **OTP** code sent to your inbox
+4. Sign in
+
+<img src="images/023s_android_onboarding_who_we_are.png" width="600">
+
+<img src="images/029s_android_login_screen.png" width="600">
+
+---
+
+## 3) Accept permissions (don’t skip these)
+
+When prompted, accept all permissions. The most important ones are:
+
+- **Notifications:** Allow
+- **Location:** Choose **Precise** + **While using the app**
+- **Nearby Devices:** Allow
+
+<img src="images/020s_android_notifications_permission_prompt.png" width="600">
+
+<img src="images/041s_android_location_permission_prompt.png" width="600">
+
+<img src="images/045s_android_nearby_devices_permission_prompt.png" width="600">
+
+---
+
+## 4) Add your SlumberTek to the app
+
+1. From the main dashboard, tap the **+** (top right)
+2. You should see your device listed as:
+
+   **`ST_XXXXXXXXXXXX`** (this is the device MAC address)
+
+3. Tap **Connect** on your `ST_...` device
+
+<img src="images/060s_android_add_your_smart_mat_list_connect.png" width="600">
+
+---
+
+## 5) Connect SlumberTek to Wi-Fi (same network as Home Assistant)
+
+1. Select your **2.4 GHz** Wi-Fi network
+2. Enter the Wi-Fi password
+3. Tap **Verify** (or the confirm button shown in the app)
+
+<img src="images/080s_android_available_networks_enter_wifi_credentials.png" width="600">
+
+### If Wi-Fi setup fails the first time (common beta bug)
+Sometimes the first provisioning attempt fails with an error like:
+
+**“Wrong credentials or network error”**
+
+If that happens:
+- Try again (same network + same password)
+- Most users find the **second attempt works**
+
+<img src="images/075s_android_wifi_settings_loading_connected_toast.png" width="600">
+
+---
+
+## 6) Assign the device to a Room (required)
+
+SlumberTek must live inside a **Room** in the app.
+
+- If you don’t have a Room yet, the app will prompt you to create one.
+- Create the Room, then continue.
+
+<img src="images/082s_android_assign_your_smart_mat_add_room_first.png" width="600">
+
+<img src="images/100s_android_add_room_modal.png" width="600">
+
+Then name your device and finish the setup flow.
+
+<img src="images/106s_android_select_room_and_rename_device_next.png" width="600">
+
+---
+
+## 7) Run calibration
+
+Calibration establishes an initial baseline reading (auto calibration continues to adjust day-to-day).
+
+1. Open your device from the dashboard
+2. Scroll down to **Calibration** and tap into it
+3. Tap **Start Calibration**
+4. Wait a few seconds for calibration to begin
+5. **Get into bed normally** and stay there until the calibration finishes (about **30 seconds**)
+
+<img src="images/122s_android_device_page_calibration_row_visible.png" width="600">
+
+<img src="images/135s_android_calibration_intro_start_button.png" width="600">
+
+<img src="images/140s_android_calibration_running_0_percent.png" width="600">
+
+<img src="images/160s_android_calibration_activity_detected.png" width="600">
+
+After calibration, you should see a success/complete state.
+
+---
+
+## 8) Quick test (make sure it’s working)
+
+After calibration:
+1. Get in and out of bed a few times
+2. Confirm:
+   - The in-app status/indicator updates
+   - You start receiving **occupied / unoccupied** notifications
+
+<img src="images/192s_android_device_page_person_detected_notification.png" width="600">
+
+---
+
+## 9) DO NOT press “Check Firmware Update”
+
+On the device page, you may see a **Check Firmware Update** option below Calibration.
+
+**Do not press it** unless Raymond emails you and tells you to.
+
+<img src="images/125s_android_device_page_offline_toast_example.png" width="600">
+<!-- Replace the image above with a screenshot that clearly shows the "Check Firmware Update" button once you have it in images/. -->
+
+---
+
+## 10) Add SlumberTek to Home Assistant (ESPHome)
+
+Once SlumberTek is on your network, it should show up automatically in Home Assistant.
+
+1. In Home Assistant go to:
+   **Settings → Devices & Services**
+2. Look for it under **Discovered**
+3. The discovered name should look like:
+
+   **Bed Calibration XXXXXXXXXXXX** (the X’s are the MAC address)
+
+4. Add it like any other discovered ESPHome device
+
+If it doesn’t appear, email us and include:
+- Your SlumberTek `ST_...` name / MAC
+- Your Home Assistant version (if you know it)
+- Anything you noticed during Wi-Fi setup
+
+---
+
+## Known beta limitations
+
+Right now:
+- You cannot fully control (or disable) occupied/unoccupied notifications in the app
+- There is no notification history after you swipe a notification away
+
+This is beta, so feedback is expected and appreciated.
+
+---
+
+## What feedback we want from beta testers
+
+Please email feedback to any existing ASC thread you’re on, or to **beta@asc.com**.
+
+Helpful feedback includes:
+- Your overall experience using the app
+- Features you’d want next
+- Any times Home Assistant and the app disagree on bed presence
+- Any connectivity issues between SlumberTek and the app
+- A quick description of what happened, and whether it’s repeatable
+
+---
+
+## Next steps
+
+- If anything feels confusing or buggy, email **beta@asc.com** and we’ll help you troubleshoot.
