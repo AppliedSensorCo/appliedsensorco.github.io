@@ -218,7 +218,7 @@ Helpful feedback includes:
 - Features you’d want next
 - Any times Home Assistant and the app disagree on bed presence
 - Any connectivity issues between SlumberTek and the app
-- A quick description of what happened, and whether it’s repeatable
+- Also, provide a quick description of any weird bugs you find, detailing what happened, and whether the issue is repeatable.
 
 ---
 
