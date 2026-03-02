@@ -141,7 +141,7 @@ Calibration establishes an initial baseline reading (auto calibration continues 
 2. Scroll down to **Calibration** and tap into it
 3. Tap **Start Calibration**
 4. Wait a few seconds for calibration to begin
-5. **Get into bed normally** and stay there until the calibration finishes (about **30 seconds**)
+5. **Get into bed normally** and stay there until the calibration finishes (about **45 seconds**)
 
 <img src="images/122s_android_device_page_calibration_row_visible.png" width="400">
 
