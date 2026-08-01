@@ -60,7 +60,11 @@ This is hard to tell if you are just powering the device with the USB cable to a
 
 You will need to follow the [Boot Mode Instructions](https://docs.asc.com/bootmode.html) link and then you can re-install the firmware using the Easy Mode Install method.
 
-### 4) There are always more bugs to fix and documentation to improve! If you have a problem not covered here email raymond@asc.com and I'll help you fix it, and maybe make a new section here about it 😁.
+### 4) Device is offline or won't reconnect to Wi-Fi
+
+If your device has dropped off your network, or you pressed the "SlumberTek Factory Reset" button, or you changed your router, network name, or Wi-Fi password, your device needs its Wi-Fi credentials again. There are two ways to do that (one wireless, one over USB) and both are covered here: [Reconnect after Factory Reset](https://docs.asc.com/SlumberTekReconnect.html).
+
+### 5) There are always more bugs to fix and documentation to improve! If you have a problem not covered here email raymond@asc.com and I'll help you fix it, and maybe make a new section here about it 😁.
 
 ## Next Steps
 **SKIP** the Manual Installation section and move directly to understanding the [UI elements of TrampleTek Blue](https://appliedsensorco.github.io/usingHAui.html) or the [UI elements of SlumberTek](https://docs.asc.com/SlumberTek.html)

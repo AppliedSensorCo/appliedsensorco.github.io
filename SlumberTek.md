@@ -8,7 +8,7 @@ nav_order: 9
 
 ### To make SlumberTek smarter over time, **your device shares data with ASC**. Want to opt out or won’t be using internet? Just switch off “Send Data to ASC” below, no hard feelings 😁!
 
-## User Interface Overview (version 0.3.0)
+## User Interface Overview (version 0.3.2)
 
 <img src="images/Slumbertek_2_UI_023.png" width="400">
 
@@ -36,30 +36,33 @@ Text entity to explain your current auto-calibration status, it will give info a
 
 ## Diagnostic UI entities (only visible if you go into the ESPHome device settings)
 
-<img src="images/Slumbertek_1_UI_030.png" width="400">
-<img src="images/Slumbertek_2_UI_030.png" width="400">
+<img src="images/Slumbertek_1_UI_032.png" width="400">
+<img src="images/Slumbertek_2_UI_032.png" width="400">
 
 (Default Home Assistant view cuts off full names, hover your mouse over your entities to see their full names.)
 
 ## You can watch the deep-dive video on SlumberTek's Algorithm and some general troubleshooting tips here:
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/rIQU2vCFwZY?si=tPg_PAfDXCwfKUFd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### There are twenty Diagnostic entities:
+### There are twenty-four Diagnostic entities:
 
 ### Auto-calibration interval (0 is off)
-Sets the number of hours between automatic calibration events (0–24 hours). A setting of 0 disables auto-calibration, keeping the "Empty Bed value" and "Full Bed value" fixed. If set above 0, SlumberTek will perform an auto-calibration every X hours based on the previous 24 hours of "Pressure Voltage" data. This feature compensates for slow signal drift due to temperature, humidity, and textile relaxation.
+Sets the number of hours between automatic calibration events (0–24 hours). A setting of 0 disables auto-calibration, keeping the "Empty Bed value" and "Full Bed value" fixed. If set above 0, SlumberTek will perform an auto-calibration every X hours based on the previous 24 hours of "Pressure Voltage" data. This feature compensates for slow signal drift due to temperature, humidity, and textile relaxation. Default is 8 hours.
 
 ### Auto-calibration Midpoint adjuster (shifts Midpoint up and down)
 Defines how far the "Midpoint Estimate" is shifted between the 24-hour maximum and minimum "Pressure Voltage". 50% sets the midpoint exactly in the center, 5% shifts it very close to the minimum, 100% shifts it to the maximum. Default is 30%, and this value directly adjusts the "Empty Bed value" and "Full Bed value".
 
-### Auto-calibration trigger sensitivity (How much the last 24hr Pressure Voltage range must be over the current Full-Empty bed threshold gap to trigger auto-calibration)
-Auto-calibration only occurs if the 24-hour range of "Pressure Voltage" exceeds this percentage of the current gap between "Empty Bed value" and "Full Bed value". This Helps prevent recalibration on inactive nights or when a pet is resting on the bed during the day.
+### Auto-calibration trigger sensitivity (Higher requires larger in-out of bed voltage changes to trigger auto-calibration)
+Auto-calibration only occurs if the 24-hour range of "Pressure Voltage" exceeds this percentage of the current gap between "Empty Bed value" and "Full Bed value". Adjustable from 50% to 400% in 25% steps, default is 125%. This helps prevent recalibration on inactive nights or when a pet is resting on the bed during the day.
 
 ### Dynamic Empty Bed Threshold
 If "Pressure Voltage" rises *above* this value, the "Transition to Off Delay" timer begins, leading to a "clear" (out of bed) state in the "Bed Sensor".
 
 ### Dynamic Full Bed Threshold
 If "Pressure Voltage" falls *below* this value, the "Transition to On Delay" timer starts, triggering an "occupied" (in bed) state in the "Bed Sensor".
+
+### Dynamic Threshold Filter (1 fast, 2 medium, 3 slow)
+Controls how quickly the "Dynamic Empty Bed Threshold" and "Dynamic Full Bed Threshold" follow the slow drift of "Pressure Voltage". This is a separate, much slower filter than the "Pressure Voltage Filter". Higher values track drift more smoothly but respond more slowly. Default is 1.
 
 ### Empty Bed Detection Sensitivity (0 turns off dynamic threshold, higher is more sensitive)
 Higher values pull the "Dynamic Empty Bed Threshold" closer to the current "Pressure Voltage", making it more sensitive to you getting out of bed. Too high = more false "clear" events from night motion. Default is 0. Increase if SlumberTek is slow to detect exit.
@@ -85,6 +88,9 @@ Reports the onboard CPU temperature of your SlumberTek device.
 ### Midpoint Estimate
 Calculated during auto-calibration as the average between maximum and minimum "Pressure Voltage" values (excluding outliers) from the last 24-hours. All thresholds are centered around this estimate.
 
+### Minimum voltage change to publish
+The smallest change in "Pressure Voltage" or the dynamic thresholds required before a new value is sent to Home Assistant. This works together with "Update rate": the update rate sets how often a value *can* be sent, this sets how much it must have moved to be worth sending. Default is 0.01 V, adjustable from 0.004 V to 0.2 V. Lower values give finer detail in your history graphs at the cost of more data, higher values reduce database writes.
+
 ### Pressure Voltage
 The raw sensor reading from SlumberTek. All calibration, thresholds, and bed presence logic are based on this value.
 
@@ -96,6 +102,12 @@ Displays how many times the device has restarted. Useful for diagnosing firmware
 
 ### Send Data to ASC (If you run no internet HA turn this off)
 This setting is on by default, and is immensely helpful in identifying ways to improve firmware and software! If your Home Assistant is connected to the internet, this option sends encrypted MQTT posts to ASC's private servers. The data is labeled using your ESPHome ${name}, not your ${friendly_name}, which is defaultly slumbertek-XXXXXX (XXXXXX is the last 6 digits of your device's MAC address). ASC does not know your device's mac address and there is no way for us to identify your user data. If you have any questions about this please reach out directly to hello@asc.com. 
+
+### SlumberTek Factory Reset (wifi will reset, go to docs.asc.com to fix)
+Erases everything stored on the device, including your WiFi credentials, calibration values, and all the settings on this page. **Only use this as a last resort.** After a factory reset the device comes back up broadcasting the "SlumberTek Fallback Hotspot" and must be set up again, see [Reconnect after Factory Reset](https://docs.asc.com/SlumberTekReconnect.html) for how to get it back onto your Wi-Fi.
+
+### SlumberTek firmware check
+Manually asks the device to check ASC's servers for a new firmware version, updating the "Firmware" entity. The device already checks automatically every 6 hours.
 
 ### SlumberTek Restart
 Manually restarts your device remotely.
