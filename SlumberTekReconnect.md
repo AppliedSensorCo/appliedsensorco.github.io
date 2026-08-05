@@ -71,7 +71,7 @@ If you compiled your own YAML with your Wi-Fi credentials baked into it, your de
 
 ### If Method 2 isn't working
 - **Nothing shows up in the COM port list:** you likely have a charge-only USB cable or a missing USB driver. Hit cancel on the port dialog and the pop-up will give you some info on installing the right drivers.
-- **The browser crashes:** this is a known ESP Web tools quirk, the Credentials should be saved it just crashes the browser page.
+- **The browser crashes:** this is a known ESP Web tools quirk, the credentials should be saved it just crashes the browser page.
 
 ## After you're back online
 
