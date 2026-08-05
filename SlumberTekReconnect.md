@@ -34,13 +34,9 @@ If you compiled your own YAML with your Wi-Fi credentials baked into it, your de
 
 - On your phone or laptop, open your Wi-Fi settings and connect to **SlumberTek Fallback Hotspot**. It is an open network, there is **no password**.
 
+- Open a browser and go to **http://192.168.4.1** while you are still connected to the hotspot.
+
 <img src="images/Reconnect_1_hotspot_list.png" width="400">
-<!-- Replace the image above with a screenshot of a phone Wi-Fi list showing "SlumberTek Fallback Hotspot" once you have it in images/. -->
-
-- A sign-in page should pop up automatically after a few seconds. If it doesn't, open a browser and go to **http://192.168.4.1** while you are still connected to the hotspot.
-
-<img src="images/Reconnect_2_captive_portal.png" width="400">
-<!-- Replace the image above with a screenshot of the captive portal network picker at 192.168.4.1 once you have it in images/. -->
 
 - Your phone will probably warn you that this network **has no internet access** and ask if you want to stay connected. **Stay connected.** On Android it also helps to turn mobile data off for a minute, otherwise the phone quietly jumps back to cellular and the sign-in page will never load.
 
@@ -60,12 +56,12 @@ If you compiled your own YAML with your Wi-Fi credentials baked into it, your de
 
 <img src="images/USBWeb_1_USBdialogConnect.png" width="400">
 
-- Because the firmware is already on your device, you'll get a menu of device options instead of the install screen. Click **"Change Wi-Fi"** (some versions of the tool call this "Connect to Wi-Fi").
+- Because the firmware is already on your device, you'll get a menu of device options instead of the install screen. Click **"Connect to Wi-Fi"** (some versions of the tool call this "Change Wi-Fi").
 
-<img src="images/Reconnect_3_change_wifi.png" width="400">
+<img src="images/Reconnect_2_change_wifi.png" width="400">
 <!-- Replace the image above with a screenshot of the ESP Web Tools dialog showing the "Change Wi-Fi" option once you have it in images/. -->
 
-### ⚠️ While you're in that menu, **do not click "Erase User Data"**. It does the same thing as the Factory Reset button and you'd be starting this page over again. Only click "Install" if you actually want to re-flash the firmware.
+### ⚠️ While you're in that menu, only click "Install" if you actually want to re-flash the firmware.
 
 - Select your 2.4 GHz network, enter your Wi-Fi password, and it will let you know if it doesn't like your credentials.
 
@@ -75,8 +71,7 @@ If you compiled your own YAML with your Wi-Fi credentials baked into it, your de
 
 ### If Method 2 isn't working
 - **Nothing shows up in the COM port list:** you likely have a charge-only USB cable or a missing USB driver. Hit cancel on the port dialog and the pop-up will give you some info on installing the right drivers.
-- **The tool connects but won't talk to the device:** follow the [Boot Mode Instructions](https://docs.asc.com/bootmode.html) and try again.
-- **The browser crashes:** this is a known ESP Web tools quirk, see [Easy Mode Troubleshooting Tips](https://docs.asc.com/EasyModeTroubleshooting.html).
+- **The browser crashes:** this is a known ESP Web tools quirk, the Credentials should be saved it just crashes the browser page.
 
 ## After you're back online
 
