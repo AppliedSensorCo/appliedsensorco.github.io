@@ -56,7 +56,7 @@ SlumberTek & TrampleTek Easy Mode Install – Full Tutorial & Fixes
 
 ## 1) Plug your device into your computer
 
-**This is the first step and it's easy to miss.** Plug the USB cable that came with your TrampleTek Blue or SlumberTek into the device, and plug the other end **directly into a USB port on your computer** — not a wall charger, not a phone brick.
+ **Plug the USB cable that came with your TrampleTek Blue or SlumberTek into the device**, and plug the other end **directly into a USB port on your computer** — not a wall charger, not a phone brick.
 
 - The device needs to **stay plugged in for the whole install**.
 - Plug straight into the computer if you can, and skip USB hubs and docks.
