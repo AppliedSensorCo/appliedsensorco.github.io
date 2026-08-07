@@ -55,6 +55,6 @@ You will not have access to the "Reset" button, I suggest (1) unplugging the USB
 Unplug the USB-C cable and clip the protective cover back onto the circuit board. Make sure the USB-C connection hole in the protective cover is aligned with the cutout in the waterproofing plastic sheet before squeezing the protective cover to snap it back into place. Plug the USB-C cable back in and continue to the next steps.
 
 ## Next Steps
-Let's move on to setting up the YAML code on the mat [YAML Code Installation](https://appliedsensorco.github.io/Manual-Installation/yamlcode.html).
+Let's move on to setting up the YAML code on the mat [YAML Code Installation](https://docs.asc.com/Manual-Installation/yamlcode.html).
 
 Please join the [ASC Discord server](https://discord.gg/cB9P6NmYJg) if you have questions or comments about this page.

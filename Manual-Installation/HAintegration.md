@@ -26,6 +26,6 @@ nav_order: 3
 - Once the integration is successful the UI should look something like this (UI depends on the device you installed and future UI updates!)
 
 ## Next Steps
-Now let's do a double check that you added the [Wifi critical fix](https://appliedsensorco.github.io/Manual-Installation/critical_wifi.html).
+Now let's do a double check that you added the [Wifi critical fix](https://docs.asc.com/Manual-Installation/critical_wifi.html).
 
 Please join the [ASC Discord server](https://discord.gg/cB9P6NmYJg) if you have questions or comments about this page.

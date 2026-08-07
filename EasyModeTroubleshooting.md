@@ -67,6 +67,6 @@ If your device has dropped off your network, or you pressed the "SlumberTek Fact
 ### 5) There are always more bugs to fix and documentation to improve! If you have a problem not covered here email raymond@asc.com and I'll help you fix it, and maybe make a new section here about it 😁.
 
 ## Next Steps
-**SKIP** the Manual Installation section and move directly to understanding the [UI elements of TrampleTek Blue](https://appliedsensorco.github.io/usingHAui.html) or the [UI elements of SlumberTek](https://docs.asc.com/SlumberTek.html)
+**SKIP** the Manual Installation section and move directly to understanding the [UI elements of TrampleTek Blue](https://docs.asc.com/usingHAui.html) or the [UI elements of SlumberTek](https://docs.asc.com/SlumberTek.html)
 
 Please join the [ASC Discord server](https://discord.gg/cB9P6NmYJg) if you have questions or comments about this page.

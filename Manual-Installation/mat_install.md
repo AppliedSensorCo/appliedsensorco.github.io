@@ -32,7 +32,7 @@ If you are not using the default Home Assistant with the ESPHome add-on (e.g. yo
 
 <img src="../../images/select_new_device_continue.png" width="600">
 
-For now we will use the ESPHome web interface, as there are steps we need to take to make sure the board's Wi-Fi is configured to be stable enough to connect with Home Assistant. This is the [critical fix](https://appliedsensorco.github.io/Manual-Installation/critical_wifi.html) I will mention in multiple places.
+For now we will use the ESPHome web interface, as there are steps we need to take to make sure the board's Wi-Fi is configured to be stable enough to connect with Home Assistant. This is the [critical fix](https://docs.asc.com/Manual-Installation/critical_wifi.html) I will mention in multiple places.
 
 -	Pick a name for your device.
 
@@ -94,7 +94,7 @@ Side note: I think the simplest option is actually “Plug into the computer run
 
 <img src="../../images/ESPHome_web_connect_bin_install.png" width="600">
 
-WARNING: THIS STEP MIGHT FAIL! That’s okay, it just means the computer can’t (or made a mistake and didn’t) put the device into Boot Mode. Sometimes you can disconnect and reconnect the device (you will need to redo the previous step on connecting to the device with ESPHome web) and then the install button will work. If you continue to get an error about “timing out” you will need to manually put the device into Boot Mode. [Boot Mode Instructions](https://appliedsensorco.github.io/bootmode.html).
+WARNING: THIS STEP MIGHT FAIL! That’s okay, it just means the computer can’t (or made a mistake and didn’t) put the device into Boot Mode. Sometimes you can disconnect and reconnect the device (you will need to redo the previous step on connecting to the device with ESPHome web) and then the install button will work. If you continue to get an error about “timing out” you will need to manually put the device into Boot Mode. [Boot Mode Instructions](https://docs.asc.com/bootmode.html).
 
 -	If the install starts working, you’ll start seeing loading:
 
@@ -105,6 +105,6 @@ WARNING: THIS STEP MIGHT FAIL! That’s okay, it just means the computer can’t
 <img src="../../images/ESPHome_web_connect_install_success.png" width="600">
 
 ## Next Steps
-Let's move on to setting up the YAML code on the device [YAML Code Installation](https://appliedsensorco.github.io/Manual-Installation/yamlcode.html).
+Let's move on to setting up the YAML code on the device [YAML Code Installation](https://docs.asc.com/Manual-Installation/yamlcode.html).
 
 Please join the [ASC Discord server](https://discord.gg/cB9P6NmYJg) if you have questions or comments about this page.
